@@ -152,4 +152,56 @@
 //         System.out.println(vowels(str, i));
 //     }
 // }
+
+
+// public class Recursionfunction {
+
+//     static int vowels(String str, int i) {
+//         if (i == str.length()) return 0;
+
+//         char ch = str.charAt(i);
+//         int count = (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') ? 1 : 0;
+
+//         return count + vowels(str, i + 1);
+//     }
+
+//     public static void main(String[] args) {
+//         String str = "hello";
+//         int i = 0;
+
+//         System.out.println(vowels(str, i));
+// }
+// }
+
+
+public class Recursionfunction {
+
+    static void subset(String p, String up) {
+        if (up.isEmpty()) {
+            System.out.println(p);
+            return;
+        }
+
+        char ch = up.charAt(0);
+
+        // include character
+        subset(p + ch, up.substring(1));
+
+        // exclude character
+        subset(p, up.substring(1));
+    }
+
+    public static void main(String[] args) {
+        String str = "abc";
+        subset("", str);
+    }
+}
+
+
+
+
+
+
+
+
  
