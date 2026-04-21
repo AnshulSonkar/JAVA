@@ -254,6 +254,23 @@
 // } 
 
 
+public class SubstringExample {
+    public static void main(String[] args) {
+        String text = "Programming";
+
+        String sub1 = text.substring(3); 
+        
+    
+        String sub2 = text.substring(0, 6); 
+
+        System.out.println(sub1);
+        System.out.println(sub2);
+    }
+}
+
+
+
+
 
  
 
