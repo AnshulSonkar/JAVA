@@ -254,19 +254,87 @@
 // } 
 
 
-public class SubstringExample {
-    public static void main(String[] args) {
-        String text = "Programming";
+// public class SubstringExample {
+//     public static void main(String[] args) {
+//         String text = "Programming";
 
-        String sub1 = text.substring(3); 
+//         String sub1 = text.substring(3); 
         
     
-        String sub2 = text.substring(0, 6); 
+//         String sub2 = text.substring(0, 6); 
 
-        System.out.println(sub1);
-        System.out.println(sub2);
+//         System.out.println(sub1);
+//         System.out.println(sub2);
+//     }
+// }
+
+
+// public class SubstringExample {
+// public static void main(String[] args) {
+//         String str = "Programming";
+
+//         String firstHalf = str.substring(0, str.length() / 2);
+
+//         System.out.println(firstHalf);
+//     }
+// }
+
+
+// public class SubstringExample {
+//     public static void main(String[] args) {
+//         String str = "Programming";
+
+//         String lastPart = str.substring(str.length() - 3);
+
+//         System.out.println(lastPart);
+//     }
+
+// }
+
+
+// public class SubstringExample {
+//      public static void main(String[] args) {
+//         String str = "Programming";
+
+//         String result = str.substring(1, str.length() - 1);
+
+//         System.out.println(result);
+//     }
+// }
+
+
+// Remove space
+// public class SubstringExample {
+// public static void main(String[] args) {
+//         String str = "Hello World Java";
+//         String result = "";
+
+//         for (int i = 0; i < str.length(); i++) {
+//             String ch = str.substring(i, i + 1);
+
+//             if (!ch.equals(" ")) {
+//                 result += ch;
+//             }
+//         }
+
+//         System.out.println(result);
+//     }
+// }
+
+
+public class SubstringExample {
+    public static void main(String[] args) {
+        String str = "HelloWorld";
+
+        String part1 = str.substring(0, 5);
+        String part2 = str.substring(5);
+
+        System.out.println(part1);
+        System.out.println(part2);
     }
 }
+
+
 
 
 

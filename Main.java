@@ -84,15 +84,31 @@
 // }
 
 
+// class Main {
+//    public static void main(String[] args) {
+//     boolean isSunUp = false;
+
+//         if (isSunUp == true)
+//             System.out.println("day");
+//         else
+//             System.out.println("night");
+
+//  }
+// }
+
+
 class Main {
-   public static void main(String[] args) {
-    boolean isSunUp = false;
 
-        if (isSunUp == true)
-            System.out.println("day");
-        else
-            System.out.println("night");
-
- }
+      public static void printName(String name) {
+      System.out.println(name);
+    }
+    public static void printSum(int a, int b) {
+        int sum = a + b;
+        System.out.println(sum);
+   }
+    public static void main (String[] args) {
+        printSum(1 , 6);
+    }
 }
+
 
