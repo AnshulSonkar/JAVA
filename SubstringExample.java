@@ -322,17 +322,20 @@
 // }
 
 
-public class SubstringExample {
-    public static void main(String[] args) {
-        String str = "HelloWorld";
+// public class SubstringExample {
+//     public static void main(String[] args) {
+//         String str = "HelloWorld";
 
-        String part1 = str.substring(0, 5);
-        String part2 = str.substring(5);
+//         String part1 = str.substring(0, 5);
+//         String part2 = str.substring(5);
 
-        System.out.println(part1);
-        System.out.println(part2);
-    }
-}
+//         System.out.println(part1);
+//         System.out.println(part2);
+//     }
+// /}
+
+
+
 
 
 
