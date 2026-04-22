@@ -235,20 +235,41 @@
 // }
 
 
+// public class Recursionfunction {
+//     static int count(int[] arr, int i, int key) {
+//         if (i == arr.length) return 0;
+//         int c = (arr[i] == key) ? 1 : 0;
+//         return c + count(arr, i + 1, key);
+//     }
+
+//     public static void main(String[] args) {
+//         int[] arr = {1,2,3,2,4,2};
+//         System.out.println(count(arr, 0, 2));
+//     }
+// }
+
+
 public class Recursionfunction {
-    static int count(int[] arr, int i, int key) {
-        if (i == arr.length) return 0;
-        int c = (arr[i] == key) ? 1 : 0;
-        return c + count(arr, i + 1, key);
+
+    static void totalsum(int[] arr, int i, int sum, String curr) {
+        if (i == arr.length) {
+            System.out.println(curr + " -> Sum = " + sum);
+            return;
+        }
+
+        // include current element
+        totalsum(arr, i + 1, sum + arr[i], curr + arr[i] + " ");
+
+        // exclude current element
+        totalsum(arr, i + 1, sum, curr);
     }
 
     public static void main(String[] args) {
-        int[] arr = {1,2,3,2,4,2};
-        System.out.println(count(arr, 0, 2));
+        int[] arr = {1, 2, 3};
+
+        totalsum(arr, 0, 0, "");
     }
 }
-
-
 
 
  
