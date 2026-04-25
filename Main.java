@@ -152,16 +152,34 @@
     // }
 
 
-    public class Main {
-    public static void main(String[] args) {
-        String s1 = "abcd";
-        String s2 = "cdab";
+//     public class Main {
+//     public static void main(String[] args) {
+//         String s1 = "abcd";
+//         String s2 = "cdab";
 
-        if (s1.length() == s2.length() && (s1 + s1).contains(s2)) {
-            System.out.println("Rotation");
-        } else {
-            System.out.println("Not Rotation");
+//         if (s1.length() == s2.length() && (s1 + s1).contains(s2)) {
+//             System.out.println("Rotation");
+//         } else {
+//             System.out.println("Not Rotation");
+//         }
+//     }
+// }
+
+
+public class Main {
+public static void main(String[] args) {
+        String str = "hello";
+        int v = 0, c = 0;
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if ("aeiou".indexOf(ch) != -1) v++;
+            else c++;
         }
+
+        System.out.println("Vowels: " + v);
+        System.out.println("Consonants: " + c);
     }
 }
 
