@@ -230,22 +230,42 @@
 // }
 
 
+// public class Main {
+
+//         public static void main(String[] args) {
+//         int n = 8;
+
+//         int a = 0, b = 1;
+
+//         for (int i = 2; i <= n; i++) {
+//             int c = a + b;
+//             a = b;
+//             b = c;
+//         }
+
+//         System.out.println(n == 0 ? a : b);
+//     }
+
+// }
+
+
+import java.util.Arrays;
 public class Main {
+static int ways(int n, int[] dp) {
+        if (n <= 1) return 1;
 
-        public static void main(String[] args) {
-        int n = 8;
+        if (dp[n] != -1) return dp[n];
 
-        int a = 0, b = 1;
-
-        for (int i = 2; i <= n; i++) {
-            int c = a + b;
-            a = b;
-            b = c;
-        }
-
-        System.out.println(n == 0 ? a : b);
+        return dp[n] = ways(n - 1, dp) + ways(n - 2, dp);
     }
 
-}
+    public static void main(String[] args) {
+        int n = 6;
 
+        int[] dp = new int[n + 1];
+        Arrays.fill(dp, -1);
+
+        System.out.println(ways(n, dp));
+    }
+}
     
