@@ -213,20 +213,39 @@
 
 
 
-public class Main {
-public static void main(String[] args) {
-        int n = 4;
+// public class Main {
+// public static void main(String[] args) {
+//         int n = 4;
 
-        int[] dp = new int[n + 1];
-        dp[0] = 0;
-        dp[1] = 1;
+//         int[] dp = new int[n + 1];
+//         dp[0] = 0;
+//         dp[1] = 1;
+
+//         for (int i = 2; i <= n; i++) {
+//             dp[i] = dp[i - 1] + dp[i - 2];
+//         }
+
+//         System.out.println(dp[n]);
+//     }
+// }
+
+
+public class Main {
+
+        public static void main(String[] args) {
+        int n = 8;
+
+        int a = 0, b = 1;
 
         for (int i = 2; i <= n; i++) {
-            dp[i] = dp[i - 1] + dp[i - 2];
+            int c = a + b;
+            a = b;
+            b = c;
         }
 
-        System.out.println(dp[n]);
+        System.out.println(n == 0 ? a : b);
     }
+
 }
 
     
