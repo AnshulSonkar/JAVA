@@ -131,22 +131,39 @@
 // }
 
 
+    // public class Main {
+    //     public static void main(String[] args) {
+    //     String str = "programming";
+
+    //     for (int i = 0; i < str.length(); i++) {
+    //         int count = 0;
+
+    //         for (int j = i + 1; j < str.length(); j++) {
+    //             if (str.charAt(i) == str.charAt(j)) {
+    //                 count++;
+    //             }
+    //         }
+
+    //         if (count > 0) {
+    //             System.out.println(str.charAt(i));
+    //         }
+    //     }
+    // }
+    // }
+
+
     public class Main {
-        public static void main(String[] args) {
-        String str = "programming";
+    public static void main(String[] args) {
+        String s1 = "abcd";
+        String s2 = "cdab";
 
-        for (int i = 0; i < str.length(); i++) {
-            int count = 0;
-
-            for (int j = i + 1; j < str.length(); j++) {
-                if (str.charAt(i) == str.charAt(j)) {
-                    count++;
-                }
-            }
-
-            if (count > 0) {
-                System.out.println(str.charAt(i));
-            }
+        if (s1.length() == s2.length() && (s1 + s1).contains(s2)) {
+            System.out.println("Rotation");
+        } else {
+            System.out.println("Not Rotation");
         }
     }
-    }
+}
+
+
+    
