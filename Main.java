@@ -112,22 +112,41 @@
 // }
 
 
-public class Main {
-public static void main(String[] args) {
-        String str = "banana";
+// public class Main {
+// public static void main(String[] args) {
+//         String str = "banana";
 
-        int[] count = new int[26];
+//         int[] count = new int[26];
+
+//         for (int i = 0; i < str.length(); i++) {
+//             count[str.charAt(i) - 'a']++;
+//         }
+
+//         for (int i = 0; i < 26; i++) {
+//             if (count[i] > 0) {
+//                 System.out.println((char)(i + 'a') + " -> " + count[i]);
+//             }
+//         }
+//     }
+// }
+
+
+    public class Main {
+        public static void main(String[] args) {
+        String str = "programming";
 
         for (int i = 0; i < str.length(); i++) {
-            count[str.charAt(i) - 'a']++;
-        }
+            int count = 0;
 
-        for (int i = 0; i < 26; i++) {
-            if (count[i] > 0) {
-                System.out.println((char)(i + 'a') + " -> " + count[i]);
+            for (int j = i + 1; j < str.length(); j++) {
+                if (str.charAt(i) == str.charAt(j)) {
+                    count++;
+                }
+            }
+
+            if (count > 0) {
+                System.out.println(str.charAt(i));
             }
         }
     }
-}
-
-
+    }
