@@ -166,22 +166,49 @@
 // }
 
 
+// public class Main {
+// public static void main(String[] args) {
+//         String str = "hello";
+//         int v = 0, c = 0;
+
+//         for (int i = 0; i < str.length(); i++) {
+//             char ch = str.charAt(i);
+
+//             if ("aeiou".indexOf(ch) != -1) v++;
+//             else c++;
+//         }
+
+//         System.out.println("Vowels: " + v);
+//         System.out.println("Consonants: " + c);
+//     }
+// }
+
+
+import java.util.Arrays;
+
 public class Main {
-public static void main(String[] args) {
-        String str = "hello";
-        int v = 0, c = 0;
 
-        for (int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
-
-            if ("aeiou".indexOf(ch) != -1) v++;
-            else c++;
+   static int fibo(int n, int[] dp) {
+        if (n <= 1) {
+            return n;
         }
 
-        System.out.println("Vowels: " + v);
-        System.out.println("Consonants: " + c);
+        if (dp[n] != -1) {
+            return dp[n];
+        }
+
+        dp[n] = fibo(n - 1, dp) + fibo(n - 2, dp);
+        return dp[n];
+    }
+
+    public static void main(String[] args) {
+        int n = 5;
+
+        int[] dp = new int[n + 1];
+        Arrays.fill(dp, -1);
+
+        System.out.println(fibo(n, dp));
     }
 }
-
 
     
