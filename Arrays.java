@@ -48,25 +48,41 @@
 
 
 // Rotate Array
-import java.util.*;
+// import java.util.*;
 
-public class RotateArray {
-    public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5};
-        int k = 2;
+// public class RotateArray {
+//     public static void main(String[] args) {
+//         int[] arr = {1, 2, 3, 4, 5};
+//         int k = 2;
 
-        int n = arr.length;
-        k = k % n;
+//         int n = arr.length;
+//         k = k % n;
 
-        int[] res = new int[n];
+//         int[] res = new int[n];
 
-        for (int i = 0; i < n; i++) {
-            res[(i + k) % n] = arr[i];
-        }
+//         for (int i = 0; i < n; i++) {
+//             res[(i + k) % n] = arr[i];
+//         }
 
-        System.out.println("Rotated Array:");
-        for (int x : res) {
-            System.out.print(x + " ");
-        }
+//         System.out.println("Rotated Array:");
+//         for (int x : res) {
+//             System.out.print(x + " ");
+//         }
+//     }
+// }
+
+
+import java.util.Scanner;
+public class Arrays {
+  public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    int[] arr=new int[a];
+    for(int i=0;i<a;i++){
+      arr[i]=sc.nextInt();
     }
+    for(int i=0;i<a;i++){
+      System.out.print(arr[i]+"");
+    }
+  }
 }
