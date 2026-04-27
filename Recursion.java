@@ -57,19 +57,29 @@
 // }
 
 
+// public class Recursion {
+//     static void print(int n) {
+//         if (n == 0) return;
+//         System.out.print(n + " ");
+//         print(n - 1);
+//     }
+
+//     public static void main(String[] args) {
+//         print(5);
+//     }
+// }
+
+
 public class Recursion {
-    static void print(int n) {
-        if (n == 0) return;
-        System.out.print(n + " ");
-        print(n - 1);
+static int sum(int n) {
+        if (n == 0) return 0;
+        return n % 10 + sum(n / 10);
     }
 
     public static void main(String[] args) {
-        print(5);
+        System.out.println(sum(1234));
     }
 }
-
-
 
 
 
