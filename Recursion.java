@@ -70,14 +70,29 @@
 // }
 
 
+// public class Recursion {
+// static int sum(int n) {
+//         if (n == 0) return 0;
+//         return n % 10 + sum(n / 10);
+//     }
+
+//     public static void main(String[] args) {
+//         System.out.println(sum(1234));
+//     }
+// }
+
+
 public class Recursion {
-static int sum(int n) {
-        if (n == 0) return 0;
-        return n % 10 + sum(n / 10);
+
+    static boolean isSorted(int[] arr, int i) {
+        if (i == arr.length - 1) return true;
+        if (arr[i] > arr[i + 1]) return false;
+        return isSorted(arr, i + 1);
     }
 
     public static void main(String[] args) {
-        System.out.println(sum(1234));
+        int[] arr = {1,2,3,4};
+        System.out.println(isSorted(arr, 0));
     }
 }
 
