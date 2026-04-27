@@ -249,23 +249,36 @@
 // }
 
 
-import java.util.Arrays;
+// import java.util.Arrays;
+// public class Main {
+// static int ways(int n, int[] dp) {
+//         if (n <= 1) return 1;
+
+//         if (dp[n] != -1) return dp[n];
+
+//         return dp[n] = ways(n - 1, dp) + ways(n - 2, dp);
+//     }
+
+//     public static void main(String[] args) {
+//         int n = 6;
+
+//         int[] dp = new int[n + 1];
+//         Arrays.fill(dp, -1);
+
+//         System.out.println(ways(n, dp));
+//     }
+// }
+
+
+
 public class Main {
-static int ways(int n, int[] dp) {
-        if (n <= 1) return 1;
-
-        if (dp[n] != -1) return dp[n];
-
-        return dp[n] = ways(n - 1, dp) + ways(n - 2, dp);
-    }
-
+    static int recursioin(int a,int b){
+    int sum=a+b;
+   return sum;
+  }
     public static void main(String[] args) {
-        int n = 6;
-
-        int[] dp = new int[n + 1];
-        Arrays.fill(dp, -1);
-
-        System.out.println(ways(n, dp));
-    }
+       
+        System.out.println(recursioin(2,3));
+  }
 }
     
