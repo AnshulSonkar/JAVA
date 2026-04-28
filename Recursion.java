@@ -115,15 +115,33 @@
 // }
 
 
-public class Recursion {
+// public class Recursion {
 
-    public static void main(String[] args) {
-        String str = "Java is easy";
+//     public static void main(String[] args) {
+//         String str = "Java is easy";
 
-        String[] words = str.split(" ");
-        System.out.println(words.length);
-    }
+//         String[] words = str.split(" ");
+//         System.out.println(words.length);
+//     }
  
+// }
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Recursion {
+     public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) % 2 != 0) {
+                list.remove(i);
+                i--;
+            }
+        }
+
+        System.out.println(list);
+    }
 }
 
 
