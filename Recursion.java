@@ -144,16 +144,30 @@
 //     }
 // }
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
+// import java.util.ArrayList;
+// import java.util.Arrays;
+// import java.util.Collections;
+
+// public class Recursion {
+// public static void main(String[] args) {
+//         ArrayList<Integer> list = new ArrayList<>(Arrays.asList(10,20,30,40));
+
+//         Collections.sort(list);
+//         System.out.println(list.get(list.size() - 2));
+//     }
+// } 
+
 
 public class Recursion {
 public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(10,20,30,40));
+        int n = 4;
 
-        Collections.sort(list);
-        System.out.println(list.get(list.size() - 2));
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
     }
 }
 
