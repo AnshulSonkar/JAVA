@@ -126,21 +126,34 @@
  
 // }
 
+// import java.util.ArrayList;
+// import java.util.Arrays;
+
+// public class Recursion {
+//      public static void main(String[] args) {
+//         ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+
+//         for (int i = 0; i < list.size(); i++) {
+//             if (list.get(i) % 2 != 0) {
+//                 list.remove(i);
+//                 i--;
+//             }
+//         }
+
+//         System.out.println(list);
+//     }
+// }
+
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class Recursion {
-     public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(10,20,30,40));
 
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) % 2 != 0) {
-                list.remove(i);
-                i--;
-            }
-        }
-
-        System.out.println(list);
+        Collections.sort(list);
+        System.out.println(list.get(list.size() - 2));
     }
 }
 
