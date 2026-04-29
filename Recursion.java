@@ -171,26 +171,46 @@
 //     }
 // }
 
-import java.util.Arrays;
 
-public class Recursion {
 
-    static int fib(int n, int[] dp) {
-        if (n <= 1) return n;
-        if (dp[n] != -1) return dp[n];
 
-        return dp[n] = fib(n - 1, dp) + fib(n - 2, dp);
-    }
+// import java.util.Arrays;
+
+// public class Recursion {
+
+//     static int fib(int n, int[] dp) {
+//         if (n <= 1) return n;
+//         if (dp[n] != -1) return dp[n];
+
+//         return dp[n] = fib(n - 1, dp) + fib(n - 2, dp);
+//     }
+
+//     public static void main(String[] args) {
+//         int n = 6;
+
+//         int[] dp = new int[n + 1];
+//         Arrays.fill(dp, -1);
+
+//         System.out.println(fib(n, dp));
+//     }
+// }
+
+
+ public class Recursion {
 
     public static void main(String[] args) {
-        int n = 6;
+        int n = 153, temp = n, sum = 0;
 
-        int[] dp = new int[n + 1];
-        Arrays.fill(dp, -1);
+        while (temp > 0) {
+            int d = temp % 10;
+            sum += d * d * d;
+            temp /= 10;
+        }
 
-        System.out.println(fib(n, dp));
+        System.out.println(sum == n ? "Armstrong" : "Not Armstrong");
     }
-}
+    
+ }
 
 
 
