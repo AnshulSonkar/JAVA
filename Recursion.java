@@ -232,28 +232,48 @@
 //  }
 
 
+// public class Recursion {
+// static void subset(String p, String up) {
+//         if (up.isEmpty()) {
+//             System.out.println(p);
+//             return;
+//         }
+
+//         char ch = up.charAt(0);
+
+//         // include
+//         subset(p + ch, up.substring(1));
+
+//         // exclude
+//         subset(p, up.substring(1));
+//     }
+
+//     public static void main(String[] args) {
+//         subset("", "abc");
+//     }
+// }
+
+
 public class Recursion {
-static void subset(String p, String up) {
-        if (up.isEmpty()) {
-            System.out.println(p);
+
+     static void subsetSum(int[] arr, int i, int sum, String curr) {
+        if (i == arr.length) {
+            System.out.println(curr + "-> " + sum);
             return;
         }
 
-        char ch = up.charAt(0);
-
         // include
-        subset(p + ch, up.substring(1));
+        subsetSum(arr, i + 1, sum + arr[i], curr + arr[i] + " ");
 
         // exclude
-        subset(p, up.substring(1));
+        subsetSum(arr, i + 1, sum, curr);
     }
 
     public static void main(String[] args) {
-        subset("", "abc");
+        int[] arr = {1, 2, 3};
+        subsetSum(arr, 0, 0, "");
     }
 }
-
-
 
 
     
