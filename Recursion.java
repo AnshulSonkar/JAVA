@@ -213,24 +213,45 @@
 //  }
 
 
- public class Recursion {
+//  public class Recursion {
 
-    public static void main(String[] args) {
-        int n = 7;
-        boolean prime = true;
+//     public static void main(String[] args) {
+//         int n = 7;
+//         boolean prime = true;
 
-        for (int i = 2; i <= n/2; i++) {
-            if (n % i == 0) {
-                prime = false;
-                break;
-            }
+//         for (int i = 2; i <= n/2; i++) {
+//             if (n % i == 0) {
+//                 prime = false;
+//                 break;
+//             }
+//         }
+
+//         System.out.println(prime ? "Prime" : "Not Prime");
+//     }
+
+//  }
+
+
+public class Recursion {
+static void subset(String p, String up) {
+        if (up.isEmpty()) {
+            System.out.println(p);
+            return;
         }
 
-        System.out.println(prime ? "Prime" : "Not Prime");
+        char ch = up.charAt(0);
+
+        // include
+        subset(p + ch, up.substring(1));
+
+        // exclude
+        subset(p, up.substring(1));
     }
 
- }
-
+    public static void main(String[] args) {
+        subset("", "abc");
+    }
+}
 
 
 
