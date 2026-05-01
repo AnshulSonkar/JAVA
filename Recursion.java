@@ -276,28 +276,47 @@
 // }
 
 
-public class Recursion {
+// public class Recursion {
 
-    static void permute(String p, String up) {
+//     static void permute(String p, String up) {
+//         if (up.isEmpty()) {
+//             System.out.println(p);
+//             return;
+//         }
+
+//         char ch = up.charAt(0);
+
+//         for (int i = 0; i <= p.length(); i++) {
+//             String first = p.substring(0, i);
+//             String second = p.substring(i);
+
+//             permute(first + ch + second, up.substring(1));
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         permute("", "abc");
+//     }
+// }
+
+
+public class Recursion {   
+static int count(String p, String up) {
         if (up.isEmpty()) {
-            System.out.println(p);
-            return;
+            return 1;
         }
 
         char ch = up.charAt(0);
 
-        for (int i = 0; i <= p.length(); i++) {
-            String first = p.substring(0, i);
-            String second = p.substring(i);
-
-            permute(first + ch + second, up.substring(1));
-        }
+        return count(p + ch, up.substring(1)) +
+               count(p, up.substring(1));
     }
 
     public static void main(String[] args) {
-        permute("", "abc");
+        System.out.println(count("", "abc"));
     }
 }
+
 
 
 
