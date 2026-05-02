@@ -362,29 +362,54 @@
 // }
 
 
+// public class Recursion {
+//  static void permute(String p, String up) {
+//         if (up.isEmpty()) {
+//             System.out.println(p);
+//             return;
+//         }
+
+//         char ch = up.charAt(0);
+
+//         for (int i = 0; i <= p.length(); i++) {
+//             String first = p.substring(0, i);
+//             String second = p.substring(i);
+
+//             permute(first + ch + second, up.substring(1));
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         permute("", "abc");
+//     }
+// }
+
+
 public class Recursion {
- static void permute(String p, String up) {
-        if (up.isEmpty()) {
-            System.out.println(p);
+
+     static void findSubset(int[] arr, int i, int sum, int target, String curr) {
+        if (i == arr.length) {
+            if (sum == target) {
+                System.out.println(curr);
+            }
             return;
         }
 
-        char ch = up.charAt(0);
+        // include
+        findSubset(arr, i + 1, sum + arr[i], target, curr + arr[i] + " ");
 
-        for (int i = 0; i <= p.length(); i++) {
-            String first = p.substring(0, i);
-            String second = p.substring(i);
-
-            permute(first + ch + second, up.substring(1));
-        }
+        // exclude
+        findSubset(arr, i + 1, sum, target, curr);
     }
 
     public static void main(String[] args) {
-        permute("", "abc");
+        int[] arr = {1, 2, 3, 4};
+        int target = 5;
+
+        findSubset(arr, 0, 0, target, "");
     }
+
 }
-
-
 
 
     
