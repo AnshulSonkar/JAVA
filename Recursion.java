@@ -341,26 +341,48 @@
 // }
 
 
+// public class Recursion {
+//     static void subsetSum(int[] arr, int i, int sum, String curr) {
+//         if (i == arr.length) {
+//             System.out.println(curr + "-> " + sum);
+//             return;
+//         }
+
+//         // include
+//         subsetSum(arr, i + 1, sum + arr[i], curr + arr[i] + " ");
+
+//         // exclude
+//         subsetSum(arr, i + 1, sum, curr);
+//     }
+
+//     public static void main(String[] args) {
+//         int[] arr = {1, 2, 3};
+//         subsetSum(arr, 0, 0, "");
+//     }
+// }
+
+
 public class Recursion {
-    static void subsetSum(int[] arr, int i, int sum, String curr) {
-        if (i == arr.length) {
-            System.out.println(curr + "-> " + sum);
+ static void permute(String p, String up) {
+        if (up.isEmpty()) {
+            System.out.println(p);
             return;
         }
 
-        // include
-        subsetSum(arr, i + 1, sum + arr[i], curr + arr[i] + " ");
+        char ch = up.charAt(0);
 
-        // exclude
-        subsetSum(arr, i + 1, sum, curr);
+        for (int i = 0; i <= p.length(); i++) {
+            String first = p.substring(0, i);
+            String second = p.substring(i);
+
+            permute(first + ch + second, up.substring(1));
+        }
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3};
-        subsetSum(arr, 0, 0, "");
+        permute("", "abc");
     }
 }
-
 
 
 
