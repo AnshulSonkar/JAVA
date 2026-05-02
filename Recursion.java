@@ -300,20 +300,43 @@
 // }
 
 
-public class Recursion {   
-static int count(String p, String up) {
+// public class Recursion {   
+// static int count(String p, String up) {
+//         if (up.isEmpty()) {
+//             return 1;
+//         }
+
+//         char ch = up.charAt(0);
+
+//         return count(p + ch, up.substring(1)) +
+//                count(p, up.substring(1));
+//     }
+
+//     public static void main(String[] args) {
+//         System.out.println(count("", "abc"));
+//     }
+// }
+
+
+public class Recursion {
+
+static void subset(String p, String up) {
         if (up.isEmpty()) {
-            return 1;
+            System.out.println(p);
+            return;
         }
 
         char ch = up.charAt(0);
 
-        return count(p + ch, up.substring(1)) +
-               count(p, up.substring(1));
+        // include
+        subset(p + ch, up.substring(1));
+
+        // exclude
+        subset(p, up.substring(1));
     }
 
     public static void main(String[] args) {
-        System.out.println(count("", "abc"));
+        subset("", "abc");
     }
 }
 
