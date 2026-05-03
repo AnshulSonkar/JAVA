@@ -452,25 +452,48 @@
 // }
 
 
-import java.util.Arrays;
+// import java.util.Arrays;
 
+// public class Recursion {
+//     public static void main(String[] args) {
+//         int[] arr = {5, 3, 2, 4, 1};
+
+//         for (int i = 0; i < arr.length; i++) {
+//             int minIndex = i;
+
+//             for (int j = i + 1; j < arr.length; j++) {
+//                 if (arr[j] < arr[minIndex]) {
+//                     minIndex = j;
+//                 }
+//             }
+
+//             // swap
+//             int temp = arr[i];
+//             arr[i] = arr[minIndex];
+//             arr[minIndex] = temp;
+//         }
+
+//         System.out.println(Arrays.toString(arr));
+//     }
+// }
+
+
+import java.util.Arrays;
 public class Recursion {
-    public static void main(String[] args) {
+
+public static void main(String[] args) {
         int[] arr = {5, 3, 2, 4, 1};
 
-        for (int i = 0; i < arr.length; i++) {
-            int minIndex = i;
+        for (int i = 1; i < arr.length; i++) {
+            int current = arr[i];
+            int j = i - 1;
 
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[j] < arr[minIndex]) {
-                    minIndex = j;
-                }
+            while (j >= 0 && arr[j] > current) {
+                arr[j + 1] = arr[j];
+                j--;
             }
 
-            // swap
-            int temp = arr[i];
-            arr[i] = arr[minIndex];
-            arr[minIndex] = temp;
+            arr[j + 1] = current;
         }
 
         System.out.println(Arrays.toString(arr));
