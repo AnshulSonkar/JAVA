@@ -412,22 +412,46 @@
 // }
 
 
+// public class Recursion {
+// static int count(String p, String up) {
+//         if (up.isEmpty()) {
+//             return 1;
+//         }
+
+//         char ch = up.charAt(0);
+
+//         return count(p + ch, up.substring(1)) +
+//                count(p, up.substring(1));
+//     }
+
+//     public static void main(String[] args) {
+//         System.out.println(count("", "abc"));
+//     }
+// }
+
+import java.util.Arrays;
+
 public class Recursion {
-static int count(String p, String up) {
-        if (up.isEmpty()) {
-            return 1;
+public static void main(String[] args) {
+        int[] arr = {5, 3, 2, 4, 1};
+
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - i - 1; j++) {
+
+                if (arr[j] > arr[j + 1]) {
+                    // swap
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
         }
 
-        char ch = up.charAt(0);
-
-        return count(p + ch, up.substring(1)) +
-               count(p, up.substring(1));
-    }
-
-    public static void main(String[] args) {
-        System.out.println(count("", "abc"));
+        System.out.println(Arrays.toString(arr));
     }
 }
+
+
 
 
 
