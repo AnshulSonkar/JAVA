@@ -513,18 +513,45 @@
 // }
 
 
+// import java.util.Arrays;
+// import java.util.Collections;
+
+// public class Recursion {
+//     public static void main(String[] args) {
+//         Integer[] arr = {18, 13, 9, 5, 1};
+
+//         Arrays.sort(arr, Collections.reverseOrder());
+
+//         System.out.println(Arrays.toString(arr));
+//     }
+
+// }
+
+
 import java.util.Arrays;
-import java.util.Collections;
-
 public class Recursion {
-    public static void main(String[] args) {
-        Integer[] arr = {18, 13, 9, 5, 1};
+ public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
 
-        Arrays.sort(arr, Collections.reverseOrder());
+        boolean swapped;
+
+        for (int i = 0; i < arr.length - 1; i++) {
+            swapped = false;
+
+            for (int j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                    swapped = true;
+                }
+            }
+
+            if (!swapped) break;
+        }
 
         System.out.println(Arrays.toString(arr));
     }
-
 }
     
 
