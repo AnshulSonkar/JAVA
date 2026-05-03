@@ -385,31 +385,50 @@
 // }
 
 
-public class Recursion {
+// public class Recursion {
 
-     static void findSubset(int[] arr, int i, int sum, int target, String curr) {
-        if (i == arr.length) {
-            if (sum == target) {
-                System.out.println(curr);
-            }
-            return;
+//      static void findSubset(int[] arr, int i, int sum, int target, String curr) {
+//         if (i == arr.length) {
+//             if (sum == target) {
+//                 System.out.println(curr);
+//             }
+//             return;
+//         }
+
+//         // include
+//         findSubset(arr, i + 1, sum + arr[i], target, curr + arr[i] + " ");
+
+//         // exclude
+//         findSubset(arr, i + 1, sum, target, curr);
+//     }
+
+//     public static void main(String[] args) {
+//         int[] arr = {1, 2, 3, 4};
+//         int target = 5;
+
+//         findSubset(arr, 0, 0, target, "");
+//     }
+
+// }
+
+
+public class Recursion {
+static int count(String p, String up) {
+        if (up.isEmpty()) {
+            return 1;
         }
 
-        // include
-        findSubset(arr, i + 1, sum + arr[i], target, curr + arr[i] + " ");
+        char ch = up.charAt(0);
 
-        // exclude
-        findSubset(arr, i + 1, sum, target, curr);
+        return count(p + ch, up.substring(1)) +
+               count(p, up.substring(1));
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4};
-        int target = 5;
-
-        findSubset(arr, 0, 0, target, "");
+        System.out.println(count("", "abc"));
     }
-
 }
+
 
 
     
