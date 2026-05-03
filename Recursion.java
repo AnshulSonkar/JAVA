@@ -501,16 +501,35 @@
 // }
 
 
-import java.util.Arrays;
-public class Recursion {
-public static void main(String[] args) {
-        int[] arr = {9, 7, 5, 3, 1};
+// import java.util.Arrays;
+// public class Recursion {
+// public static void main(String[] args) {
+//         int[] arr = {9, 7, 5, 3, 1};
 
-        Arrays.sort(arr);
+//         Arrays.sort(arr);
+
+//         System.out.println(Arrays.toString(arr));
+//     }
+// }
+
+
+import java.util.Arrays;
+import java.util.Collections;
+
+public class Recursion {
+    public static void main(String[] args) {
+        Integer[] arr = {18, 13, 9, 5, 1};
+
+        Arrays.sort(arr, Collections.reverseOrder());
 
         System.out.println(Arrays.toString(arr));
     }
+
 }
+    
+
+
+
 
 
 
