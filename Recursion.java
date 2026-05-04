@@ -555,22 +555,48 @@
 // }
 
 
+// public class Recursion {
+// public static void main(String[] args) {
+//         int[] arr = {1, 2, 3, 4};
+
+//         boolean sorted = true;
+
+//         for (int i = 0; i < arr.length - 1; i++) {
+//             if (arr[i] > arr[i + 1]) {
+//                 sorted = false;
+//                 break;
+//             }
+//         }
+
+//         System.out.println(sorted ? "Sorted" : "Not Sorted");
+//     }
+// } 
+
+import java.util.Arrays;
+
 public class Recursion {
-public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4};
+    public static void main(String[] args) {
+        int[] a = {1, 3, 5};
+        int[] b = {2, 4, 6};
 
-        boolean sorted = true;
+        int[] c = new int[a.length + b.length];
 
-        for (int i = 0; i < arr.length - 1; i++) {
-            if (arr[i] > arr[i + 1]) {
-                sorted = false;
-                break;
-            }
+        int i = 0, j = 0, k = 0;
+
+        while (i < a.length && j < b.length) {
+            if (a[i] < b[j]) c[k++] = a[i++];
+            else c[k++] = b[j++];
         }
 
-        System.out.println(sorted ? "Sorted" : "Not Sorted");
+        while (i < a.length) c[k++] = a[i++];
+        while (j < b.length) c[k++] = b[j++];
+
+        System.out.println(Arrays.toString(c));
     }
 }
+
+
+
     
 
 
