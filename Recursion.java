@@ -596,20 +596,34 @@
 // }
 
 
+// import java.util.Arrays;
+// public class Recursion {
+
+// public static void main(String[] args) {
+//         int[] arr = {7, 2, 5, 3, 1};
+
+//         int k = 3;
+
+//         Arrays.sort(arr);
+
+//         System.out.println("Kth smallest: " + arr[k - 1]);
+//     }
+// }
+
 
 import java.util.Arrays;
 public class Recursion {
-
 public static void main(String[] args) {
-        int[] arr = {7, 2, 5, 3, 1};
+        String str = "dcba";
 
-        int k = 3;
-
+        char[] arr = str.toCharArray();
         Arrays.sort(arr);
 
-        System.out.println("Kth smallest: " + arr[k - 1]);
+        System.out.println(new String(arr));
     }
 }
+
+
 
 
 
