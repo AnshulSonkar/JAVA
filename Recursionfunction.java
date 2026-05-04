@@ -249,27 +249,78 @@
 // }
 
 
+// public class Recursionfunction {
+
+//     static void totalsum(int[] arr, int i, int sum, String curr) {
+//         if (i == arr.length) {
+//             System.out.println(curr + " -> Sum = " + sum);
+//             return;
+//         }
+
+//         // include current element
+//         totalsum(arr, i + 1, sum + arr[i], curr + arr[i] + " ");
+
+//         // exclude current element
+//         totalsum(arr, i + 1, sum, curr);
+//     }
+
+//     public static void main(String[] args) {
+//         int[] arr = {1, 2, 3};
+
+//         totalsum(arr, 0, 0, "");
+//     }
+// }
+
+
+// import java.util.Arrays;
+// public class Recursionfunction {
+//     static int minSteps(int n, int[] dp){
+//         if (n<=2) return n;
+//         if (dp[n] != -1) return dp[n];
+//         dp[n] = minSteps(n:n-1, dp) + (n-1) * minSteps( n: n-2, dp);
+//         return dp[n];
+//     }
+//     public static void main(String[] args) {
+//         int n = 3;
+//         int[] dp = new int[n+1];
+//         Arrays.fill(dp , va -1);
+//         System.out.println(minSteps(n, dp)); 
+//     }
+            
+//             {
+            
+//         }
+//     }
+
+
+import java.util.Arrays;
+
 public class Recursionfunction {
 
-    static void totalsum(int[] arr, int i, int sum, String curr) {
-        if (i == arr.length) {
-            System.out.println(curr + " -> Sum = " + sum);
-            return;
-        }
+    static int minSteps(int n, int[] dp) {
+        if (n <= 2) return n;
 
-        // include current element
-        totalsum(arr, i + 1, sum + arr[i], curr + arr[i] + " ");
+        if (dp[n] != -1) return dp[n];
 
-        // exclude current element
-        totalsum(arr, i + 1, sum, curr);
+        //Relation
+        dp[n] = minSteps(n - 1, dp) + minSteps(n - 2, dp);
+
+        return dp[n];
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3};
+        int n = 5;
 
-        totalsum(arr, 0, 0, "");
+        int[] dp = new int[n + 1];
+        Arrays.fill(dp, -1);
+
+        System.out.println(minSteps(n, dp));
     }
 }
+
+
+
+
 
 
  
