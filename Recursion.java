@@ -611,18 +611,36 @@
 // }
 
 
-import java.util.Arrays;
+// import java.util.Arrays;
+// public class Recursion {
+// public static void main(String[] args) {
+//         String str = "dcba";
+
+//         char[] arr = str.toCharArray();
+//         Arrays.sort(arr);
+
+//         System.out.println(new String(arr));
+//     }
+// }
+
+
 public class Recursion {
-public static void main(String[] args) {
-        String str = "dcba";
+static boolean isPossible(int[] arr, int i, int sum, int target) {
+        if (sum == target) return true;
+        if (i == arr.length) return false;
 
-        char[] arr = str.toCharArray();
-        Arrays.sort(arr);
+        // include OR exclude
+        return isPossible(arr, i + 1, sum + arr[i], target) ||
+               isPossible(arr, i + 1, sum, target);
+    }
 
-        System.out.println(new String(arr));
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3};
+        int target = 6;
+
+        System.out.println(isPossible(arr, 0, 0, target));
     }
 }
-
 
 
 
