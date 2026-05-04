@@ -293,30 +293,56 @@
 //     }
 
 
+// import java.util.Arrays;
+
+// public class Recursionfunction {
+
+//     static int minSteps(int n, int[] dp) {
+//         if (n <= 2) return n;
+
+//         if (dp[n] != -1) return dp[n];
+
+//         //Relation
+//         dp[n] = minSteps(n - 1, dp) + minSteps(n - 2, dp);
+
+//         return dp[n];
+//     }
+
+//     public static void main(String[] args) {
+//         int n = 5;
+
+//         int[] dp = new int[n + 1];
+//         Arrays.fill(dp, -1);
+
+//         System.out.println(minSteps(n, dp));
+//     }
+// } 
+
+
 import java.util.Arrays;
 
 public class Recursionfunction {
 
-    static int minSteps(int n, int[] dp) {
-        if (n <= 2) return n;
+    static int[] sum(int[] n, int target) {
 
-        if (dp[n] != -1) return dp[n];
+        for (int i = 0; i < n.length; i++) {
+            for (int j = i + 1; j < n.length; j++) {
 
-        //Relation
-        dp[n] = minSteps(n - 1, dp) + minSteps(n - 2, dp);
+                if (target == n[i] + n[j]) {
+                    return new int[]{i, j};
+                }
+            }
+        }
 
-        return dp[n];
+        return new int[]{-1, -1};
     }
 
     public static void main(String[] args) {
-        int n = 5;
-
-        int[] dp = new int[n + 1];
-        Arrays.fill(dp, -1);
-
-        System.out.println(minSteps(n, dp));
+        int result[] = sum(new int[]{3, 2, 4}, 6);
+        System.out.println(Arrays.toString(result));
     }
 }
+
 
 
 
