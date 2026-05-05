@@ -315,24 +315,45 @@
 
 
 
-import java.util.Scanner;
+// import java.util.Scanner;
+
+// public class Main {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         int rows = 3;
+//         int cols = 3;
+//         int[][] matrix = new int[rows][cols];
+
+//         System.out.println("Enter elements:");
+
+//         for(int i = 0; i < rows; i++) {
+//             for(int j = 0; j < cols; j++) {
+//                 matrix[i][j] = sc.nextInt();
+//             }
+//         }
+//     }
+// } 
+
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int rows = 3;
-        int cols = 3;
-        int[][] matrix = new int[rows][cols];
-
-        System.out.println("Enter elements:");
-
-        for(int i = 0; i < rows; i++) {
-            for(int j = 0; j < cols; j++) {
-                matrix[i][j] = sc.nextInt();
+static int linearSearch(int[] arr, int key) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == key) {
+                return i;
             }
         }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {4, 2, 7, 1, 9};
+
+        System.out.println(linearSearch(arr, 7));
     }
 }
+
+
+
 
     
