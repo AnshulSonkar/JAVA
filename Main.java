@@ -420,21 +420,38 @@
 // }
 
 
+// public class Main {
+// public static void main(String[] args) {
+//         int[] arr = {1,2,2,2,3,4};
+//         int key = 2;
+
+//         int count = 0;
+
+//         for (int x : arr) {
+//             if (x == key) count++;
+//         }
+
+//         System.out.println(count);
+//     }
+// }
+
+
 public class Main {
-public static void main(String[] args) {
-        int[] arr = {1,2,2,2,3,4};
+ public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 2, 4, 2};
         int key = 2;
 
-        int count = 0;
+        int index = -1;
 
-        for (int x : arr) {
-            if (x == key) count++;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == key) {
+                index = i;   
+            }
         }
 
-        System.out.println(count);
+        System.out.println(index);
     }
 }
-
 
 
 
