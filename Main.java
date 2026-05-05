@@ -379,24 +379,43 @@
 // }
 
 
+// public class Main {
+// static int binarySearch(int[] arr, int low, int high, int key) {
+//         if (low > high) return -1;
+
+//         int mid = (low + high) / 2;
+
+//         if (arr[mid] == key) return mid;
+
+//         if (arr[mid] < key)
+//             return binarySearch(arr, mid + 1, high, key);
+//         else
+//             return binarySearch(arr, low, mid - 1, key);
+//     }
+
+//     public static void main(String[] args) {
+//         int[] arr = {1,2,3,4,5};
+
+//         System.out.println(binarySearch(arr, 0, arr.length - 1, 5));
+//     }
+// }
+
+
 public class Main {
-static int binarySearch(int[] arr, int low, int high, int key) {
-        if (low > high) return -1;
+public static void main(String[] args) {
+        int[] arr = {1,2,2,2,3,4};
+        int key = 2;
 
-        int mid = (low + high) / 2;
+        int index = -1;
 
-        if (arr[mid] == key) return mid;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == key) {
+                index = i;
+                break;
+            }
+        }
 
-        if (arr[mid] < key)
-            return binarySearch(arr, mid + 1, high, key);
-        else
-            return binarySearch(arr, low, mid - 1, key);
-    }
-
-    public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5};
-
-        System.out.println(binarySearch(arr, 0, arr.length - 1, 5));
+        System.out.println(index);
     }
 }
 
