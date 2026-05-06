@@ -490,19 +490,31 @@
 // }
 
 
+// public class Main {
+//  public static void main(String[] args) {
+//         int[] arr = {5, 2, 8, 1, 4};
+
+//         int min = arr[0];
+
+//         for (int x : arr) {
+//             if (x < min) {
+//                 min = x;
+//             }
+//         }
+
+//         System.out.println(min);
+//     }
+// }
+
+
+import java.util.Arrays;
 public class Main {
- public static void main(String[] args) {
+public static void main(String[] args) {
         int[] arr = {5, 2, 8, 1, 4};
 
-        int min = arr[0];
+        Arrays.sort(arr);
 
-        for (int x : arr) {
-            if (x < min) {
-                min = x;
-            }
-        }
-
-        System.out.println(min);
+        System.out.println(arr[0]);
     }
 }
 
