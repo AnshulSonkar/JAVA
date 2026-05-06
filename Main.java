@@ -473,19 +473,36 @@
 // }
 
 
+// public class Main {
+// public static void main(String[] args) {
+//         int[] arr = {5, 2, 8, 1, 4};
+
+//         int min = arr[0];
+
+//         for (int i = 1; i < arr.length; i++) {
+//             if (arr[i] < min) {
+//                 min = arr[i];
+//             }
+//         }
+
+//         System.out.println("Smallest: " + min);
+//     }
+// }
+
+
 public class Main {
-public static void main(String[] args) {
+ public static void main(String[] args) {
         int[] arr = {5, 2, 8, 1, 4};
 
         int min = arr[0];
 
-        for (int i = 1; i < arr.length; i++) {
-            if (arr[i] < min) {
-                min = arr[i];
+        for (int x : arr) {
+            if (x < min) {
+                min = x;
             }
         }
 
-        System.out.println("Smallest: " + min);
+        System.out.println(min);
     }
 }
 
