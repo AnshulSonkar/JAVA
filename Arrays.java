@@ -88,27 +88,48 @@
 // }
 
 
-public class Arrays {
-public static void main(String[] args) {
+// public class Arrays {
+// public static void main(String[] args) {
 
-        int[] arr = {2, 4, 6, 8, 10};
-        int key = 6;
+//         int[] arr = {2, 4, 6, 8, 10};
+//         int key = 6;
+
+//         boolean found = false;
+
+//         for (int i = 0; i < arr.length; i++) {
+
+//             if (arr[i] == key) {
+//                 found = true;
+//                 break;
+//             }
+//         }
+
+//         if (found) {
+//             System.out.println("Element Exists");
+//         } else {
+//             System.out.println("Element Does Not Exist");
+//         }
+// }
+// }
+
+
+public class Arrays {
+ public static void main(String[] args) {
+
+        int[] arr = {1, 3, 5, 7};
+        int key = 4;
 
         boolean found = false;
 
-        for (int i = 0; i < arr.length; i++) {
-
-            if (arr[i] == key) {
+        for (int x : arr) {
+            if (x == key) {
                 found = true;
                 break;
             }
         }
 
-        if (found) {
-            System.out.println("Element Exists");
-        } else {
-            System.out.println("Element Does Not Exist");
-        }
+        System.out.println(found ? "Exists" : "Not Exists");
+    }
 }
-}
+
 
