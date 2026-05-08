@@ -72,17 +72,43 @@
 // }
 
 
-import java.util.Scanner;
+// import java.util.Scanner;
+// public class Arrays {
+//   public static void main(String[] args) {
+//     Scanner sc=new Scanner(System.in);
+//     int a=sc.nextInt();
+//     int[] arr=new int[a];
+//     for(int i=0;i<a;i++){
+//       arr[i]=sc.nextInt();
+//     }
+//     for(int i=0;i<a;i++){
+//       System.out.print(arr[i]+"");
+//     }
+//   }
+// }
+
+
 public class Arrays {
-  public static void main(String[] args) {
-    Scanner sc=new Scanner(System.in);
-    int a=sc.nextInt();
-    int[] arr=new int[a];
-    for(int i=0;i<a;i++){
-      arr[i]=sc.nextInt();
-    }
-    for(int i=0;i<a;i++){
-      System.out.print(arr[i]+"");
-    }
-  }
+public static void main(String[] args) {
+
+        int[] arr = {2, 4, 6, 8, 10};
+        int key = 6;
+
+        boolean found = false;
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] == key) {
+                found = true;
+                break;
+            }
+        }
+
+        if (found) {
+            System.out.println("Element Exists");
+        } else {
+            System.out.println("Element Does Not Exist");
+        }
 }
+}
+
