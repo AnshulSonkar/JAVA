@@ -113,23 +113,56 @@
 // }
 
 
+// public class Arrays {
+//  public static void main(String[] args) {
+
+//         int[] arr = {1, 3, 5, 7};
+//         int key = 4;
+
+//         boolean found = false;
+
+//         for (int x : arr) {
+//             if (x == key) {
+//                 found = true;
+//                 break;
+//             }
+//         }
+
+//         System.out.println(found ? "Exists" : "Not Exists");
+//     }
+// }
+
+
 public class Arrays {
- public static void main(String[] args) {
+static boolean binarySearch(int[] arr, int key) {
 
-        int[] arr = {1, 3, 5, 7};
-        int key = 4;
+        int low = 0;
+        int high = arr.length - 1;
 
-        boolean found = false;
+        while (low <= high) {
 
-        for (int x : arr) {
-            if (x == key) {
-                found = true;
-                break;
+            int mid = (low + high) / 2;
+
+            if (arr[mid] == key) {
+                return true;
+            }
+
+            else if (arr[mid] < key) {
+                low = mid + 1;
+            }
+
+            else {
+                high = mid - 1;
             }
         }
 
-        System.out.println(found ? "Exists" : "Not Exists");
+        return false;
+    }
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3, 4, 5};
+
+        System.out.println(binarySearch(arr, 4));
     }
 }
-
 
