@@ -391,22 +391,41 @@
 // }
 
 
+// public class SubstringExample {
+// public static void main(String[] args) {
+
+//         String str = "banana";
+//         char target = 'a';
+
+//         int count = 0;
+
+//         for (int i = 0; i < str.length(); i++) {
+
+//             if (str.charAt(i) == target) {
+//                 count++;
+//             }
+//         }
+
+//         System.out.println("Count = " + count);
+//     }
+// }
+
+
 public class SubstringExample {
-public static void main(String[] args) {
+  static boolean search(String str, int i, char target) {
 
-        String str = "banana";
-        char target = 'a';
+        if (i == str.length()) return false;
 
-        int count = 0;
+        if (str.charAt(i) == target) return true;
 
-        for (int i = 0; i < str.length(); i++) {
+        return search(str, i + 1, target);
+    }
 
-            if (str.charAt(i) == target) {
-                count++;
-            }
-        }
+    public static void main(String[] args) {
 
-        System.out.println("Count = " + count);
+        String str = "hello";
+
+        System.out.println(search(str, 0, 'o'));
     }
 }
 
