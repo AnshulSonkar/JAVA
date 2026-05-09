@@ -356,21 +356,39 @@
 // }
 
 
+// public class SubstringExample {
+// public static void main(String[] args) {
+
+//         String str = "hello";
+
+//         if (str.contains("ll")) {
+//             System.out.println("Exists");
+//         } else {
+//             System.out.println("Not Exists");
+//         }
+//     }
+// }
+
+
 public class SubstringExample {
-public static void main(String[] args) {
+ public static void main(String[] args) {
 
-        String str = "hello";
+        String str = "programming";
+        char target = 'g';
 
-        if (str.contains("ll")) {
-            System.out.println("Exists");
-        } else {
-            System.out.println("Not Exists");
+        int index = -1;
+
+        for (int i = 0; i < str.length(); i++) {
+
+            if (str.charAt(i) == target) {
+                index = i;
+                break;
+            }
         }
+
+        System.out.println(index);
     }
 }
-
-
-
 
 
 
