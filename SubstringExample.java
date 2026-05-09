@@ -335,25 +335,40 @@
 // /}
 
 
+// public class SubstringExample {
+//  public static void main(String[] args) {
+
+//         String str = "hello";
+//         char target = 'e';
+
+//         boolean found = false;
+
+//         for (int i = 0; i < str.length(); i++) {
+
+//             if (str.charAt(i) == target) {
+//                 found = true;
+//                 break;
+//             }
+//         }
+
+//         System.out.println(found ? "Character Exists" : "Character Not Found");
+//     }
+// }
+
+
 public class SubstringExample {
- public static void main(String[] args) {
+public static void main(String[] args) {
 
         String str = "hello";
-        char target = 'e';
 
-        boolean found = false;
-
-        for (int i = 0; i < str.length(); i++) {
-
-            if (str.charAt(i) == target) {
-                found = true;
-                break;
-            }
+        if (str.contains("ll")) {
+            System.out.println("Exists");
+        } else {
+            System.out.println("Not Exists");
         }
-
-        System.out.println(found ? "Character Exists" : "Character Not Found");
     }
 }
+
 
 
 
