@@ -430,16 +430,26 @@
 // }
 
 
+// public class SubstringExample {
+// public static void main(String[] args) {
+
+//         StringBuilder sb = new StringBuilder("Hello");
+
+//         System.out.println(sb);
+//     }
+// }
+
+
 public class SubstringExample {
-public static void main(String[] args) {
+ public static void main(String[] args) {
 
         StringBuilder sb = new StringBuilder("Hello");
+
+        sb.append(" Java");
 
         System.out.println(sb);
     }
 }
-
-
 
 
 
