@@ -411,21 +411,31 @@
 // }
 
 
+// public class SubstringExample {
+//   static boolean search(String str, int i, char target) {
+
+//         if (i == str.length()) return false;
+
+//         if (str.charAt(i) == target) return true;
+
+//         return search(str, i + 1, target);
+//     }
+
+//     public static void main(String[] args) {
+
+//         String str = "hello";
+
+//         System.out.println(search(str, 0, 'o'));
+//     }
+// }
+
+
 public class SubstringExample {
-  static boolean search(String str, int i, char target) {
+public static void main(String[] args) {
 
-        if (i == str.length()) return false;
+        StringBuilder sb = new StringBuilder("Hello");
 
-        if (str.charAt(i) == target) return true;
-
-        return search(str, i + 1, target);
-    }
-
-    public static void main(String[] args) {
-
-        String str = "hello";
-
-        System.out.println(search(str, 0, 'o'));
+        System.out.println(sb);
     }
 }
 
