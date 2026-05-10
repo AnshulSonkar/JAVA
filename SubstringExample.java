@@ -452,12 +452,24 @@
 // }
 
 
+// public class SubstringExample {
+//  public static void main(String[] args) {
+
+//         StringBuilder sb = new StringBuilder("Helo");
+
+//         sb.insert(3, 'l');
+
+//         System.out.println(sb);
+//     }
+// }
+
+
 public class SubstringExample {
- public static void main(String[] args) {
+public static void main(String[] args) {
 
-        StringBuilder sb = new StringBuilder("Helo");
+        StringBuilder sb = new StringBuilder("Hello");
 
-        sb.insert(3, 'l');
+        sb.delete(1, 3);
 
         System.out.println(sb);
     }
