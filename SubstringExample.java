@@ -464,17 +464,28 @@
 // }
 
 
+// public class SubstringExample {
+// public static void main(String[] args) {
+
+//         StringBuilder sb = new StringBuilder("Hello");
+
+//         sb.delete(1, 3);
+
+//         System.out.println(sb);
+//     }
+// }
+
+
 public class SubstringExample {
-public static void main(String[] args) {
+ public static void main(String[] args) {
 
-        StringBuilder sb = new StringBuilder("Hello");
+        StringBuilder sb = new StringBuilder("hello");
 
-        sb.delete(1, 3);
+        sb.reverse();
 
         System.out.println(sb);
     }
 }
-
 
 
 
