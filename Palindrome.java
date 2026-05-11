@@ -18,27 +18,45 @@
 // }
 
 
+// public class Palindrome {
+//  public static void main(String[] args) {
+
+//         String str = "level";
+
+//         int left = 0;
+//         int right = str.length() - 1;
+
+//         boolean isPalindrome = true;
+
+//         while (left < right) {
+
+//             if (str.charAt(left) != str.charAt(right)) {
+//                 isPalindrome = false;
+//                 break;
+//             }
+
+//             left++;
+//             right--;
+//         }
+
+//         System.out.println(isPalindrome ? "Palindrome" : "Not Palindrome");
+//     }
+// }
+
+
 public class Palindrome {
- public static void main(String[] args) {
+public static void main(String[] args) {
 
-        String str = "level";
+        int n = 121;
+        int temp = n;
+        int rev = 0;
 
-        int left = 0;
-        int right = str.length() - 1;
-
-        boolean isPalindrome = true;
-
-        while (left < right) {
-
-            if (str.charAt(left) != str.charAt(right)) {
-                isPalindrome = false;
-                break;
-            }
-
-            left++;
-            right--;
+        while (n > 0) {
+            int d = n % 10;
+            rev = rev * 10 + d;
+            n /= 10;
         }
 
-        System.out.println(isPalindrome ? "Palindrome" : "Not Palindrome");
+        System.out.println(temp == rev ? "Palindrome" : "Not Palindrome");
     }
 }
