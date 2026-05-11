@@ -476,12 +476,25 @@
 // }
 
 
+// public class SubstringExample {
+//  public static void main(String[] args) {
+
+//         StringBuilder sb = new StringBuilder("hello");
+
+//         sb.reverse();
+
+//         System.out.println(sb);
+//     }
+// }
+
+
 public class SubstringExample {
+
  public static void main(String[] args) {
 
         StringBuilder sb = new StringBuilder("hello");
 
-        sb.reverse();
+        sb.setCharAt(0, 'H');
 
         System.out.println(sb);
     }
