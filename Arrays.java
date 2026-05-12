@@ -70,3 +70,123 @@
 //         }
 //     }
 // }
+
+
+// import java.util.Scanner;
+// public class Arrays {
+//   public static void main(String[] args) {
+//     Scanner sc=new Scanner(System.in);
+//     int a=sc.nextInt();
+//     int[] arr=new int[a];
+//     for(int i=0;i<a;i++){
+//       arr[i]=sc.nextInt();
+//     }
+//     for(int i=0;i<a;i++){
+//       System.out.print(arr[i]+"");
+//     }
+//   }
+// }
+
+
+// public class Arrays {
+// public static void main(String[] args) {
+
+//         int[] arr = {2, 4, 6, 8, 10};
+//         int key = 6;
+
+//         boolean found = false;
+
+//         for (int i = 0; i < arr.length; i++) {
+
+//             if (arr[i] == key) {
+//                 found = true;
+//                 break;
+//             }
+//         }
+
+//         if (found) {
+//             System.out.println("Element Exists");
+//         } else {
+//             System.out.println("Element Does Not Exist");
+//         }
+// }
+// }
+
+
+// public class Arrays {
+//  public static void main(String[] args) {
+
+//         int[] arr = {1, 3, 5, 7};
+//         int key = 4;
+
+//         boolean found = false;
+
+//         for (int x : arr) {
+//             if (x == key) {
+//                 found = true;
+//                 break;
+//             }
+//         }
+
+//         System.out.println(found ? "Exists" : "Not Exists");
+//     }
+// }
+
+
+// public class Arrays {
+// static boolean binarySearch(int[] arr, int key) {
+
+//         int low = 0;
+//         int high = arr.length - 1;
+
+//         while (low <= high) {
+
+//             int mid = (low + high) / 2;
+
+//             if (arr[mid] == key) {
+//                 return true;
+//             }
+
+//             else if (arr[mid] < key) {
+//                 low = mid + 1;
+//             }
+
+//             else {
+//                 high = mid - 1;
+//             }
+//         }
+
+//         return false;
+//     }
+//     public static void main(String[] args) {
+
+//         int[] arr = {1, 2, 3, 4, 5};
+
+//         System.out.println(binarySearch(arr, 4));
+//     }
+// }
+
+
+// public class Arrays {
+//  static boolean search(int[] arr, int i, int key) {
+
+//         if (i == arr.length) return false;
+
+//         if (arr[i] == key) return true;
+
+//         return search(arr, i + 1, key);
+//     }
+
+//     public static void main(String[] args) {
+
+//         int[] arr = {2, 4, 6, 8};
+
+//         System.out.println(search(arr, 0, 8));
+//     }
+// }
+
+
+
+
+
+

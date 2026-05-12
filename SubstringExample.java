@@ -254,17 +254,261 @@
 // } 
 
 
-public class SubstringExample {
-    public static void main(String[] args) {
-        String text = "Programming";
+// public class SubstringExample {
+//     public static void main(String[] args) {
+//         String text = "Programming";
 
-        String sub1 = text.substring(3); 
+//         String sub1 = text.substring(3); 
         
     
-        String sub2 = text.substring(0, 6); 
+//         String sub2 = text.substring(0, 6); 
 
-        System.out.println(sub1);
-        System.out.println(sub2);
+//         System.out.println(sub1);
+//         System.out.println(sub2);
+//     }
+// }
+
+
+// public class SubstringExample {
+// public static void main(String[] args) {
+//         String str = "Programming";
+
+//         String firstHalf = str.substring(0, str.length() / 2);
+
+//         System.out.println(firstHalf);
+//     }
+// }
+
+
+// public class SubstringExample {
+//     public static void main(String[] args) {
+//         String str = "Programming";
+
+//         String lastPart = str.substring(str.length() - 3);
+
+//         System.out.println(lastPart);
+//     }
+
+// }
+
+
+// public class SubstringExample {
+//      public static void main(String[] args) {
+//         String str = "Programming";
+
+//         String result = str.substring(1, str.length() - 1);
+
+//         System.out.println(result);
+//     }
+// }
+
+
+// Remove space
+// public class SubstringExample {
+// public static void main(String[] args) {
+//         String str = "Hello World Java";
+//         String result = "";
+
+//         for (int i = 0; i < str.length(); i++) {
+//             String ch = str.substring(i, i + 1);
+
+//             if (!ch.equals(" ")) {
+//                 result += ch;
+//             }
+//         }
+
+//         System.out.println(result);
+//     }
+// }
+
+
+// public class SubstringExample {
+//     public static void main(String[] args) {
+//         String str = "HelloWorld";
+
+//         String part1 = str.substring(0, 5);
+//         String part2 = str.substring(5);
+
+//         System.out.println(part1);
+//         System.out.println(part2);
+//     }
+// /}
+
+
+// public class SubstringExample {
+//  public static void main(String[] args) {
+
+//         String str = "hello";
+//         char target = 'e';
+
+//         boolean found = false;
+
+//         for (int i = 0; i < str.length(); i++) {
+
+//             if (str.charAt(i) == target) {
+//                 found = true;
+//                 break;
+//             }
+//         }
+
+//         System.out.println(found ? "Character Exists" : "Character Not Found");
+//     }
+// }
+
+
+// public class SubstringExample {
+// public static void main(String[] args) {
+
+//         String str = "hello";
+
+//         if (str.contains("ll")) {
+//             System.out.println("Exists");
+//         } else {
+//             System.out.println("Not Exists");
+//         }
+//     }
+// }
+
+
+// public class SubstringExample {
+//  public static void main(String[] args) {
+
+//         String str = "programming";
+//         char target = 'g';
+
+//         int index = -1;
+
+//         for (int i = 0; i < str.length(); i++) {
+
+//             if (str.charAt(i) == target) {
+//                 index = i;
+//                 break;
+//             }
+//         }
+
+//         System.out.println(index);
+//     }
+// }
+
+
+// public class SubstringExample {
+// public static void main(String[] args) {
+
+//         String str = "banana";
+//         char target = 'a';
+
+//         int count = 0;
+
+//         for (int i = 0; i < str.length(); i++) {
+
+//             if (str.charAt(i) == target) {
+//                 count++;
+//             }
+//         }
+
+//         System.out.println("Count = " + count);
+//     }
+// }
+
+
+// public class SubstringExample {
+//   static boolean search(String str, int i, char target) {
+
+//         if (i == str.length()) return false;
+
+//         if (str.charAt(i) == target) return true;
+
+//         return search(str, i + 1, target);
+//     }
+
+//     public static void main(String[] args) {
+
+//         String str = "hello";
+
+//         System.out.println(search(str, 0, 'o'));
+//     }
+// }
+
+
+// public class SubstringExample {
+// public static void main(String[] args) {
+
+//         StringBuilder sb = new StringBuilder("Hello");
+
+//         System.out.println(sb);
+//     }
+// }
+
+
+// public class SubstringExample {
+//  public static void main(String[] args) {
+
+//         StringBuilder sb = new StringBuilder("Hello");
+
+//         sb.append(" Java");
+
+//         System.out.println(sb);
+//     }
+// }
+
+
+// public class SubstringExample {
+//  public static void main(String[] args) {
+
+//         StringBuilder sb = new StringBuilder("Helo");
+
+//         sb.insert(3, 'l');
+
+//         System.out.println(sb);
+//     }
+// }
+
+
+// public class SubstringExample {
+// public static void main(String[] args) {
+
+//         StringBuilder sb = new StringBuilder("Hello");
+
+//         sb.delete(1, 3);
+
+//         System.out.println(sb);
+//     }
+// }
+
+
+// public class SubstringExample {
+//  public static void main(String[] args) {
+
+//         StringBuilder sb = new StringBuilder("hello");
+
+//         sb.reverse();
+
+//         System.out.println(sb);
+//     }
+// }
+
+
+// public class SubstringExample {
+
+//  public static void main(String[] args) {
+
+//         StringBuilder sb = new StringBuilder("hello");
+
+//         sb.setCharAt(0, 'H');
+
+//         System.out.println(sb);
+//     }
+// }
+
+
+public class SubstringExample {
+public static void main(String[] args) {
+
+        StringBuilder sb = new StringBuilder("Java");
+
+        String str = sb.toString();
+
+        System.out.println(str);
     }
 }
 
