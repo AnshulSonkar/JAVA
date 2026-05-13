@@ -122,6 +122,32 @@
 // }
 
 
+// public class matrix {
+//  public static void main(String[] args) {
+
+//         int[][] arr = {
+//             {1, 2, 3},
+//             {4, 5, 6}
+//         };
+
+//         int key = 5;
+//         boolean found = false;
+
+//         for (int i = 0; i < arr.length; i++) {
+
+//             for (int j = 0; j < arr[i].length; j++) {
+
+//                 if (arr[i][j] == key) {
+//                     found = true;
+//                 }
+//             }
+//         }
+
+//         System.out.println(found ? "Found" : "Not Found");
+//     }
+// }
+
+
 public class matrix {
  public static void main(String[] args) {
 
@@ -130,19 +156,14 @@ public class matrix {
             {4, 5, 6}
         };
 
-        int key = 5;
-        boolean found = false;
+        for (int i = 0; i < arr[0].length; i++) {
 
-        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
 
-            for (int j = 0; j < arr[i].length; j++) {
-
-                if (arr[i][j] == key) {
-                    found = true;
-                }
+                System.out.print(arr[j][i] + " ");
             }
-        }
 
-        System.out.println(found ? "Found" : "Not Found");
+            System.out.println();
+        }
     }
 }
