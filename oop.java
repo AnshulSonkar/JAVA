@@ -51,27 +51,51 @@
 
 // Inheritance
 
-class Animal {
+// class Animal {
 
-    void sound() {
-        System.out.println("Animal makes sound");
+//     void sound() {
+//         System.out.println("Animal makes sound");
+//     }
+// }
+
+// class Dog extends Animal {
+
+//     void bark() {
+//         System.out.println("Dog barks");
+//     }
+// }
+
+// public class oop {
+//     public static void main(String[] args) {
+
+//         Dog d = new Dog();
+
+//         d.sound();
+//         d.bark();
+//     }
+// }
+
+
+// Method overloading
+
+class MathOp {
+
+    int add(int a, int b) {
+        return a + b;
     }
-}
 
-class Dog extends Animal {
-
-    void bark() {
-        System.out.println("Dog barks");
+    int add(int a, int b, int c) {
+        return a + b + c;
     }
 }
 
 public class oop {
     public static void main(String[] args) {
 
-        Dog d = new Dog();
+        MathOp m = new MathOp();
 
-        d.sound();
-        d.bark();
+        System.out.println(m.add(2, 3));
+        System.out.println(m.add(1, 2, 3));
     }
 }
    
