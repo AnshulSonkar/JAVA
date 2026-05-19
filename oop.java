@@ -127,28 +127,52 @@
 
 // Encapsulation
 
-class Student {
+// class Student {
 
-    private int marks;
+//     private int marks;
 
-    void setMarks(int m) {
-        marks = m;
-    }
+//     void setMarks(int m) {
+//         marks = m;
+//     }
 
-    int getMarks() {
-        return marks;
+//     int getMarks() {
+//         return marks;
+//     }
+// }
+
+// public class oop {
+//     public static void main(String[] args) {
+
+//         Student s = new Student();
+
+//         s.setMarks(95);
+
+//         System.out.println(s.getMarks());
+//     }
+// }
+
+// Abstraction
+
+// Abstraction
+
+abstract class Vehicle {
+
+    abstract void start();
+}
+
+class Car extends Vehicle {
+
+    void start() {
+        System.out.println("Car starts with key");
     }
 }
 
 public class oop {
     public static void main(String[] args) {
 
-        Student s = new Student();
+        Car c = new Car();
 
-        s.setMarks(95);
-
-        System.out.println(s.getMarks());
+        c.start();
     }
 }
-
    
