@@ -76,26 +76,52 @@
 // }
 
 
-// Method overloading
+// Method overloading (compile time)
 
-class MathOp {
+// class MathOp {
 
-    int add(int a, int b) {
-        return a + b;
+//     int add(int a, int b) {
+//         return a + b;
+//     }
+
+//     int add(int a, int b, int c) {
+//         return a + b + c;
+//     }
+// }
+
+// public class oop {
+//     public static void main(String[] args) {
+
+//         MathOp m = new MathOp();
+
+//         System.out.println(m.add(2, 3));
+//         System.out.println(m.add(1, 2, 3));
+//     }
+// }
+
+// Method overloading (run time)
+
+class Parent {
+
+    void show() {
+        System.out.println("Parent class");
     }
+}
 
-    int add(int a, int b, int c) {
-        return a + b + c;
+class Child extends Parent {
+
+    @Override
+    void show() {
+        System.out.println("Child class");
     }
 }
 
 public class oop {
     public static void main(String[] args) {
 
-        MathOp m = new MathOp();
+        Child c = new Child();
 
-        System.out.println(m.add(2, 3));
-        System.out.println(m.add(1, 2, 3));
+        c.show();
     }
 }
    
