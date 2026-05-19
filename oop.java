@@ -101,27 +101,53 @@
 
 // Method overloading (run time)
 
-class Parent {
+// class Parent {
 
-    void show() {
-        System.out.println("Parent class");
+//     void show() {
+//         System.out.println("Parent class");
+//     }
+// }
+
+// class Child extends Parent {
+
+//     @Override
+//     void show() {
+//         System.out.println("Child class");
+//     }
+// }
+
+// public class oop {
+//     public static void main(String[] args) {
+
+//         Child c = new Child();
+
+//         c.show();
+//     }
+// }
+
+// Encapsulation
+
+class Student {
+
+    private int marks;
+
+    void setMarks(int m) {
+        marks = m;
     }
-}
 
-class Child extends Parent {
-
-    @Override
-    void show() {
-        System.out.println("Child class");
+    int getMarks() {
+        return marks;
     }
 }
 
 public class oop {
     public static void main(String[] args) {
 
-        Child c = new Child();
+        Student s = new Student();
 
-        c.show();
+        s.setMarks(95);
+
+        System.out.println(s.getMarks());
     }
 }
    
