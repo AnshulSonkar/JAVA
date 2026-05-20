@@ -239,32 +239,63 @@
 
 
 // interface with multiple classes
-interface Shape {
+// interface Shape {
 
-    void area();
+//     void area();
+// }
+
+// class Circle implements Shape {
+
+//     public void area() {
+//         System.out.println("Area of Circle");
+//     }
+// }
+
+// class Rectangle implements Shape {
+
+//     public void area() {
+//         System.out.println("Area of Rectangle");
+//     }
+// }
+
+// public class oop {
+//     public static void main(String[] args) {
+
+//         Circle c = new Circle();
+//         Rectangle r = new Rectangle();
+
+//         c.area();
+//         r.area();
+//     }
+// }
+
+// Extending Interfaces 
+
+interface A {
+    void show();
 }
 
-class Circle implements Shape {
+interface B extends A {
+    void display();
+}
 
-    public void area() {
-        System.out.println("Area of Circle");
+class Demo implements B {
+
+    public void show() {
+        System.out.println("Show method");
+    }
+
+    public void display() {
+        System.out.println("Display method");
     }
 }
 
-class Rectangle implements Shape {
-
-    public void area() {
-        System.out.println("Area of Rectangle");
-    }
-}
-
-public class oop {
+public class oop  {
     public static void main(String[] args) {
 
-        Circle c = new Circle();
-        Rectangle r = new Rectangle();
+        Demo d = new Demo();
 
-        c.area();
-        r.area();
+        d.show();
+        d.display();
     }
 }
