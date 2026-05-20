@@ -157,24 +157,47 @@
 
 // Abstraction
 
-abstract class Vehicle {
+// abstract class Vehicle {
 
-    abstract void start();
+//     abstract void start();
+// }
+
+// class Car extends Vehicle {
+
+//     void start() {
+//         System.out.println("Car starts with key");
+//     }
+// }
+
+// public class oop {
+//     public static void main(String[] args) {
+
+//         Car c = new Car();
+
+//         c.start();
+//     }
+// }
+
+// interface
+
+interface Animal {
+
+    void sound();
 }
 
-class Car extends Vehicle {
+class Dog implements Animal {
 
-    void start() {
-        System.out.println("Car starts with key");
+    public void sound() {
+        System.out.println("Dog barks");
     }
 }
 
 public class oop {
     public static void main(String[] args) {
 
-        Car c = new Car();
+        Dog d = new Dog();
 
-        c.start();
+        d.sound();
     }
 }
    
