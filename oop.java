@@ -200,36 +200,71 @@
 //         d.sound();
 //     }
 // }
-   
-// Multiple Inheritance
 
-interface Walkable {
 
-    void walk();
+
+
+// // Multiple Inheritance
+
+// interface Walkable {
+
+//     void walk();
+// }
+
+// interface Runnable {
+
+//     void run();
+// }
+
+// class Human implements Walkable, Runnable {
+
+//     public void walk() {
+//         System.out.println("Human is walking");
+//     }
+
+//     public void run() {
+//         System.out.println("Human is running");
+//     }
+// }
+
+// public class oop {
+//     public static void main(String[] args) {
+
+//         Human h = new Human();
+
+//         h.walk();
+//         h.run();
+//     }
+// }
+
+
+// interface with multiple classes
+interface Shape {
+
+    void area();
 }
 
-interface Runnable {
+class Circle implements Shape {
 
-    void run();
-}
-
-class Human implements Walkable, Runnable {
-
-    public void walk() {
-        System.out.println("Human is walking");
+    public void area() {
+        System.out.println("Area of Circle");
     }
+}
 
-    public void run() {
-        System.out.println("Human is running");
+class Rectangle implements Shape {
+
+    public void area() {
+        System.out.println("Area of Rectangle");
     }
 }
 
 public class oop {
     public static void main(String[] args) {
 
-        Human h = new Human();
+        Circle c = new Circle();
+        Rectangle r = new Rectangle();
 
-        h.walk();
-        h.run();
+        c.area();
+        r.area();
     }
 }
