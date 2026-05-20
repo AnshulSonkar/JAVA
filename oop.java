@@ -180,24 +180,56 @@
 
 // interface
 
-interface Animal {
+// interface Animal {
 
-    void sound();
+//     void sound();
+// }
+
+// class Dog implements Animal {
+
+//     public void sound() {
+//         System.out.println("Dog barks");
+//     }
+// }
+
+// public class oop {
+//     public static void main(String[] args) {
+
+//         Dog d = new Dog();
+
+//         d.sound();
+//     }
+// }
+   
+// Multiple Inheritance
+
+interface Walkable {
+
+    void walk();
 }
 
-class Dog implements Animal {
+interface Runnable {
 
-    public void sound() {
-        System.out.println("Dog barks");
+    void run();
+}
+
+class Human implements Walkable, Runnable {
+
+    public void walk() {
+        System.out.println("Human is walking");
+    }
+
+    public void run() {
+        System.out.println("Human is running");
     }
 }
 
 public class oop {
     public static void main(String[] args) {
 
-        Dog d = new Dog();
+        Human h = new Human();
 
-        d.sound();
+        h.walk();
+        h.run();
     }
 }
-   
