@@ -271,31 +271,51 @@
 
 // Extending Interfaces 
 
-interface A {
-    void show();
-}
+// interface A {
+//     void show();
+// }
 
-interface B extends A {
-    void display();
-}
+// interface B extends A {
+//     void display();
+// }
 
-class Demo implements B {
+// class Demo implements B {
 
-    public void show() {
-        System.out.println("Show method");
-    }
+//     public void show() {
+//         System.out.println("Show method");
+//     }
 
-    public void display() {
-        System.out.println("Display method");
-    }
-}
+//     public void display() {
+//         System.out.println("Display method");
+//     }
+// }
 
-public class oop  {
+// public class oop  {
+//     public static void main(String[] args) {
+
+//         Demo d = new Demo();
+
+//         d.show();
+//         d.display();
+//     }
+// }
+
+// Exception Handling
+
+public class oop {
     public static void main(String[] args) {
 
-        Demo d = new Demo();
+        try {
 
-        d.show();
-        d.display();
+            int a = 10 / 0;
+
+            System.out.println(a);
+
+        } catch (ArithmeticException e) {
+
+            System.out.println("Cannot divide by zero");
+        }
+
+        System.out.println("Program continues...");
     }
 }
