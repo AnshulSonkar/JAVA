@@ -302,20 +302,36 @@
 
 // Exception Handling
 
+// public class oop {
+//     public static void main(String[] args) {
+
+//         try {
+
+//             int a = 10 / 0;
+
+//             System.out.println(a);
+
+//         } catch (ArithmeticException e) {
+
+//             System.out.println("Cannot divide by zero");
+//         }
+
+//         System.out.println("Program continues...");
+//     }
+// }
+
 public class oop {
-    public static void main(String[] args) {
+public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3};
 
         try {
 
-            int a = 10 / 0;
+            System.out.println(arr[5]);
 
-            System.out.println(a);
+        } catch (ArrayIndexOutOfBoundsException e) {
 
-        } catch (ArithmeticException e) {
-
-            System.out.println("Cannot divide by zero");
+            System.out.println("Invalid Index");
         }
-
-        System.out.println("Program continues...");
     }
 }
