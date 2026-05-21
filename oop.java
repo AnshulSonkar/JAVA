@@ -320,18 +320,38 @@
 //     }
 // }
 
-public class oop {
-public static void main(String[] args) {
 
-        int[] arr = {1, 2, 3};
+// public class oop {
+// public static void main(String[] args) {
+
+//         int[] arr = {1, 2, 3};
+
+//         try {
+
+//             System.out.println(arr[5]);
+
+//         } catch (ArrayIndexOutOfBoundsException e) {
+
+//             System.out.println("Invalid Index");
+//         }
+//     }
+// }
+
+
+public class oop {
+    public static void main(String[] args) {
 
         try {
 
-            System.out.println(arr[5]);
+            int a = 10 / 0;
 
-        } catch (ArrayIndexOutOfBoundsException e) {
+        } catch (ArithmeticException e) {
 
-            System.out.println("Invalid Index");
+            System.out.println("Arithmetic Error");
+
+        } catch (Exception e) {
+
+            System.out.println("General Error");
         }
     }
 }
