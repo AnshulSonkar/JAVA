@@ -338,20 +338,38 @@
 // }
 
 
-public class oop {
-    public static void main(String[] args) {
+// public class oop {
+//     public static void main(String[] args) {
 
-        try {
+//         try {
+
+//             int a = 10 / 0;
+
+//         } catch (ArithmeticException e) {
+
+//             System.out.println("Arithmetic Error");
+
+//         } catch (Exception e) {
+
+//             System.out.println("General Error");
+//         }
+//     }
+// }
+
+public class oop {
+public static void main(String[] args) {
+
+try {
 
             int a = 10 / 0;
 
-        } catch (ArithmeticException e) {
+} catch (Exception e) {
 
-            System.out.println("Arithmetic Error");
+System.out.println("Error occurred");
 
-        } catch (Exception e) {
+} finally {
 
-            System.out.println("General Error");
-        }
-    }
+System.out.println("Finally block executed");
+  }
+ }  
 }
