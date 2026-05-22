@@ -501,16 +501,16 @@
 // }
 
 
-public class SubstringExample {
-public static void main(String[] args) {
+// public class SubstringExample {
+// public static void main(String[] args) {
 
-        StringBuilder sb = new StringBuilder("Java");
+//         StringBuilder sb = new StringBuilder("Java");
 
-        String str = sb.toString();
+//         String str = sb.toString();
 
-        System.out.println(str);
-    }
-}
+//         System.out.println(str);
+//     }
+// }
 
 
 
