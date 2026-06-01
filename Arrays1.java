@@ -1,7 +1,7 @@
 // Revrse Array 
 // import java.util.*;
 
-// public class ReverseArray {
+// public class Arrays1 {
 //     public static void main(String[] args) {
 //         int[] arr = {1, 2, 3, 4, 5};
 
@@ -26,7 +26,7 @@
 // Inverse Array 
 // import java.util.*;
 
-// public class InverseArray {
+// public class Arrays1 {
 //     public static void main(String[] args) {
 //         int[] arr = {2, 0, 1, 3};
 
@@ -50,7 +50,7 @@
 // Rotate Array
 // import java.util.*;
 
-// public class RotateArray {
+// public class Arrays1 {
 //     public static void main(String[] args) {
 //         int[] arr = {1, 2, 3, 4, 5};
 //         int k = 2;
@@ -73,7 +73,7 @@
 
 
 // import java.util.Scanner;
-// public class Arrays {
+// public class Arrays1 {
 //   public static void main(String[] args) {
 //     Scanner sc=new Scanner(System.in);
 //     int a=sc.nextInt();
@@ -88,7 +88,7 @@
 // }
 
 
-// public class Arrays {
+// public class Arrays1 {
 // public static void main(String[] args) {
 
 //         int[] arr = {2, 4, 6, 8, 10};
@@ -113,7 +113,7 @@
 // }
 
 
-// public class Arrays {
+// public class Arrays1 {
 //  public static void main(String[] args) {
 
 //         int[] arr = {1, 3, 5, 7};
@@ -133,7 +133,7 @@
 // }
 
 
-// public class Arrays {
+// public class Arrays1 {
 // static boolean binarySearch(int[] arr, int key) {
 
 //         int low = 0;
@@ -167,26 +167,20 @@
 // }
 
 
-// public class Arrays {
-//  static boolean search(int[] arr, int i, int key) {
+public class Arrays1 {
+ static boolean search(int[] arr, int i, int key) {
 
-//         if (i == arr.length) return false;
+        if (i == arr.length) return false;
 
-//         if (arr[i] == key) return true;
+        if (arr[i] == key) return true;
 
-//         return search(arr, i + 1, key);
-//     }
+        return search(arr, i + 1, key);
+    }
 
-//     public static void main(String[] args) {
+    public static void main(String[] args) {
 
-//         int[] arr = {2, 4, 6, 8};
+        int[] arr = {2, 4, 6, 8};
 
-//         System.out.println(search(arr, 0, 8));
-//     }
-// }
-
-
-
-
-
-
+        System.out.println(search(arr, 0, 8));
+    }
+}

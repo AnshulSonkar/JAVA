@@ -1,4 +1,7 @@
-// public class SubstringExample {
+public class SubstringExample1 {
+    
+}
+// public class SubstringExample1 {
 //     public static void main(String[] args) {
 //         String text = "Programming";
 
@@ -13,7 +16,7 @@
 // }
 
 
-// public class recursion {
+// public class Recursion1 {
 //     public static void main(String[] args) {
 //         String str1 = "abc";
 //         int count = 0;
@@ -31,7 +34,7 @@
 // }
 
 
-// public class recursion {
+// public class Recursion1 {
 //      public static void main(String[] args) {
 //         String str1 = "abc";
 //         char remove = 'a';
@@ -48,7 +51,7 @@
 // }
 
 
-// public class recursion {
+// public class Recursion1 {
 //     public static void main(String[] args) {
 //         String str1 = "abc";
 //         char remove = 'a';
@@ -65,7 +68,7 @@
 // }
 
 
-// public class Recursion {
+// public class Recursion1 {
 //     public static void main(String[] args) {
 //         String str1 = "abc";
 //         char remove = 'a';
@@ -82,7 +85,7 @@
 // }
 
 
-// public class Recursion {
+// public class Recursion1 {
 //     public static void main(String[] args) {
 //         String str1 = "a34bc9d1e6";
 //         char max = '0';
@@ -100,7 +103,7 @@
 // }
 
 
-// public class Recursion {
+// public class Recursion1 {
 //     public static void main(String[] args) {
 //         String str1 = "aabbbccdeeeff";
 //         String result = "";
@@ -118,7 +121,7 @@
 // }
 
 
-// public class Recursion {
+// public class Recursion1 {
 //     Public static void main(string[] args){
 //         string str1 = "12344abc";
 //         boolean isNUm = true;
@@ -133,7 +136,7 @@
 // }
 
 
-// public class recursion {
+// public class Recursion1 {
 //     public static void main(String[] args) {
 //         String str1 = "12344abc";
 //         boolean isNum = true;
@@ -149,7 +152,7 @@
 //     }
 // }
 
-// public class Recursion {
+// public class Recursion1 {
 
 //     static void printnumber(int n) {
 //         if (n > 10) {
@@ -173,7 +176,7 @@
 // }
 
 
-// public class Recursion {
+// public class Recursion1 {
 //     static void printnumber(int n) {
 //         if (n > 20) {
 //             return;
@@ -210,7 +213,7 @@
 // }
 
 
-// public class Recursion {
+// public class Recursion1 {
 //     static void printnumber(int n) {
 //         if (n > 20) {
 //             return;
@@ -228,7 +231,7 @@
 
 // import java.util.Scanner;
 
-// public class recursion {
+// public class Recursion1 {
 
 //     // Recursive function
 //     static int power(int x, int n) {
@@ -254,7 +257,7 @@
 // } 
 
 
-// public class SubstringExample {
+// public class SubstringExample1 {
 //     public static void main(String[] args) {
 //         String text = "Programming";
 
@@ -269,7 +272,7 @@
 // }
 
 
-// public class SubstringExample {
+// public class SubstringExample1 {
 // public static void main(String[] args) {
 //         String str = "Programming";
 
@@ -280,7 +283,7 @@
 // }
 
 
-// public class SubstringExample {
+// public class SubstringExample1 {
 //     public static void main(String[] args) {
 //         String str = "Programming";
 
@@ -292,7 +295,7 @@
 // }
 
 
-// public class SubstringExample {
+// public class SubstringExample1 {
 //      public static void main(String[] args) {
 //         String str = "Programming";
 
@@ -322,7 +325,7 @@
 // }
 
 
-// public class SubstringExample {
+// public class SubstringExample1 {
 //     public static void main(String[] args) {
 //         String str = "HelloWorld";
 
@@ -335,7 +338,7 @@
 // /}
 
 
-// public class SubstringExample {
+// public class SubstringExample1 {
 //  public static void main(String[] args) {
 
 //         String str = "hello";
@@ -356,7 +359,7 @@
 // }
 
 
-// public class SubstringExample {
+// public class SubstringExample1 {
 // public static void main(String[] args) {
 
 //         String str = "hello";
@@ -370,7 +373,7 @@
 // }
 
 
-// public class SubstringExample {
+// public class SubstringExample1 {
 //  public static void main(String[] args) {
 
 //         String str = "programming";
@@ -391,7 +394,7 @@
 // }
 
 
-// public class SubstringExample {
+// public class SubstringExample1 {
 // public static void main(String[] args) {
 
 //         String str = "banana";
@@ -411,7 +414,7 @@
 // }
 
 
-// public class SubstringExample {
+// public class SubstringExample1 {
 //   static boolean search(String str, int i, char target) {
 
 //         if (i == str.length()) return false;
@@ -430,7 +433,7 @@
 // }
 
 
-// public class SubstringExample {
+// public class SubstringExample1 {
 // public static void main(String[] args) {
 
 //         StringBuilder sb = new StringBuilder("Hello");
@@ -440,7 +443,7 @@
 // }
 
 
-// public class SubstringExample {
+// public class SubstringExample1 {
 //  public static void main(String[] args) {
 
 //         StringBuilder sb = new StringBuilder("Hello");
@@ -452,7 +455,7 @@
 // }
 
 
-// public class SubstringExample {
+// public class SubstringExample1 {
 //  public static void main(String[] args) {
 
 //         StringBuilder sb = new StringBuilder("Helo");
@@ -464,7 +467,7 @@
 // }
 
 
-// public class SubstringExample {
+// public class SubstringExample1 {
 // public static void main(String[] args) {
 
 //         StringBuilder sb = new StringBuilder("Hello");
@@ -476,7 +479,7 @@
 // }
 
 
-// public class SubstringExample {
+// public class SubstringExample1 {
 //  public static void main(String[] args) {
 
 //         StringBuilder sb = new StringBuilder("hello");
@@ -488,7 +491,7 @@
 // }
 
 
-// public class SubstringExample {
+// public class SubstringExample1 {
 
 //  public static void main(String[] args) {
 
@@ -501,7 +504,7 @@
 // }
 
 
-// public class SubstringExample {
+// public class SubstringExample1 {
 // public static void main(String[] args) {
 
 //         StringBuilder sb = new StringBuilder("Java");

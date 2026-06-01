@@ -1,4 +1,4 @@
-// public class Palindrome {
+// public class Palindrome1 {
 //     public static void main(String[] args) {
 
 //         String str = "madam";
@@ -18,7 +18,7 @@
 // }
 
 
-// public class Palindrome {
+// public class Palindrome1 {
 //  public static void main(String[] args) {
 
 //         String str = "level";
@@ -44,7 +44,7 @@
 // }
 
 
-// public class Palindrome {
+// public class Palindrome1 {
 // public static void main(String[] args) {
 
 //         int n = 121;

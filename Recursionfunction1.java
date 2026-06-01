@@ -1,4 +1,4 @@
-// public class Recursionfunction {
+// public class Recursionfunction1 {
 
 //     static int power(int x, int n) {
 //         if (n == 0) {
@@ -14,7 +14,7 @@
 // } gpt
 
 
-// public class Recursionfunction {
+// public class Recursionfunction1 {
 
 //     static int sum = 0;
 
@@ -31,7 +31,7 @@
 // }
 
 
-// public class Recursionfunction {
+// public class Recursionfunction1 {
 //     static int countdigit(int n)
 //     {
 //         if (n==0) return 0;
@@ -44,7 +44,7 @@
 // }
 
 
-// public class Recursionfunction {
+// public class Recursionfunction1 {
 //     static int gcd(int a, int b)
 //     {
 //         if (b==0) return a;
@@ -57,7 +57,7 @@
 //   }
 // }
 
-// public class Recursionfunction {
+// public class Recursionfunction1 {
 
 //     static int countzero(int a) {
 //         if (a == 0)
@@ -74,7 +74,7 @@
 // }
 
 
-// public class Recursionfunction {
+// public class Recursionfunction1 {
 //     static int sumofdigitarray(int[] arr, int i)
 //     {
 //         if(i== arr.length) return 0;
@@ -90,7 +90,7 @@
 // }
 
 
-// public class Recursionfunction {
+// public class Recursionfunction1 {
 
 //     static int countercurofkey(int[] arr, int i, int key) {
 //         if (i == arr.length) return 0;
@@ -109,7 +109,7 @@
 // }
 
 
-// public class Recursionfunction {
+// public class Recursionfunction1 {
 
 //     static void replace(int[] arr, int i) {
 //         if (i == arr.length) return;
@@ -134,7 +134,7 @@
 // }
 
 
-// public class Recursionfunction {
+// public class Recursionfunction1 {
 
 //     static int vowels(String str, int i) {
 //         if (i == str.length()) return 0;
@@ -154,7 +154,7 @@
 // }
 
 
-// public class Recursionfunction {
+// public class Recursionfunction1 {
 
 //     static int vowels(String str, int i) {
 //         if (i == str.length()) return 0;
@@ -174,7 +174,7 @@
 // }
 
 
-// public class Recursionfunction {
+// public class Recursionfunction1 {
 
 //     static void subset(String p, String up) {
 //         if (up.isEmpty()) {
@@ -198,7 +198,7 @@
 // }
 
 
-// public class Recursionfunction {
+// public class Recursionfunction1 {
 
 //     static int vowels(String str, int i) {
 //         if (i == str.length()) return 0;
@@ -218,7 +218,7 @@
 // }
 
 
-// public class Recursionfunction {
+// public class Recursionfunction1 {
 //     static int reverse(int n, int rev) {
 //         if (n == 0) return rev;
 //         return reverse(n / 10, rev * 10 + n % 10);
@@ -235,7 +235,7 @@
 // }
 
 
-// public class Recursionfunction {
+// public class Recursionfunction1 {
 //     static int count(int[] arr, int i, int key) {
 //         if (i == arr.length) return 0;
 //         int c = (arr[i] == key) ? 1 : 0;
@@ -249,7 +249,7 @@
 // }
 
 
-// public class Recursionfunction {
+// public class Recursionfunction1 {
 
 //     static void totalsum(int[] arr, int i, int sum, String curr) {
 //         if (i == arr.length) {
@@ -273,7 +273,7 @@
 
 
 // import java.util.Arrays;
-// public class Recursionfunction {
+// public class Recursionfunction1 {
 //     static int minSteps(int n, int[] dp){
 //         if (n<=2) return n;
 //         if (dp[n] != -1) return dp[n];
@@ -295,7 +295,7 @@
 
 // import java.util.Arrays;
 
-// public class Recursionfunction {
+// public class Recursionfunction1 {
 
 //     static int minSteps(int n, int[] dp) {
 //         if (n <= 2) return n;
@@ -321,7 +321,7 @@
 
 // import java.util.Arrays;
 
-// public class Recursionfunction {
+// public class Recursionfunction1 {
 
 //     static int[] sum(int[] n, int target) {
 
@@ -341,15 +341,4 @@
 //         int result[] = sum(new int[]{3, 2, 4}, 6);
 //         System.out.println(Arrays.toString(result));
 //     }
-// } 
-
-
-
-
-
-
-
-
-
-
- 
+// }  

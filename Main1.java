@@ -7,7 +7,7 @@
 // }
 
 
-// public class Main {
+// public class Main1 {
 //     public static void main(String[] args) {
 //         String str = "geeksforgeeks";
 //         char result = ' ';
@@ -39,7 +39,7 @@
 // }
 
 
-// public class Main {
+// public class Main1 {
 //     public static void main(String[] args) {
 //         String str = "aabbccdee";
 //         char result = ' ';
@@ -72,7 +72,7 @@
 // }
 
 
-// class Main {
+// class Main1 {
 //     public static void main(String[] args) {
 
 //         String name1 = "Aman";
@@ -84,7 +84,7 @@
 // }
 
 
-// class Main {
+// class Main1 {
 //    public static void main(String[] args) {
 //     boolean isSunUp = false;
 
@@ -97,7 +97,7 @@
 // }
 
 
-// class Main {
+// class Main1 {
 
 //       public static void printName(String name) {
 //       System.out.println(name);
@@ -131,7 +131,7 @@
 // }
 
 
-    // public class Main {
+    // public class Main1 {
     //     public static void main(String[] args) {
     //     String str = "programming";
 
@@ -152,7 +152,7 @@
     // }
 
 
-//     public class Main {
+//     public class Main1 {
 //     public static void main(String[] args) {
 //         String s1 = "abcd";
 //         String s2 = "cdab";
@@ -166,7 +166,7 @@
 // }
 
 
-// public class Main {
+// public class Main1 {
 // public static void main(String[] args) {
 //         String str = "hello";
 //         int v = 0, c = 0;
@@ -186,7 +186,7 @@
 
 // import java.util.Arrays;
 
-// public class Main {
+// public class Main1 {
 
 //    static int fibo(int n, int[] dp) {
 //         if (n <= 1) {
@@ -213,7 +213,7 @@
 
 
 
-// public class Main {
+// public class Main1 {
 // public static void main(String[] args) {
 //         int n = 4;
 
@@ -230,7 +230,7 @@
 // }
 
 
-// public class Main {
+// public class Main1 {
 
 //         public static void main(String[] args) {
 //         int n = 8;
@@ -250,7 +250,7 @@
 
 
 // import java.util.Arrays;
-// public class Main {
+// public class Main1 {
 // static int ways(int n, int[] dp) {
 //         if (n <= 1) return 1;
 
@@ -271,7 +271,7 @@
 
 
 
-// public class Main {
+// public class Main1 {
 //     static int recursioin(int a,int b){
 //     int sum=a+b;
 //    return sum;
@@ -287,7 +287,7 @@
 
 // import java.util.Scanner;
 
-// public class Main {
+// public class Main1 {
 //  public static void main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
 
@@ -317,7 +317,7 @@
 
 // import java.util.Scanner;
 
-// public class Main {
+// public class Main1 {
 //     public static void main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
 
@@ -336,7 +336,7 @@
 // } 
 
 
-// public class Main {
+// public class Main1 {
 // static int linearSearch(int[] arr, int key) {
 //         for (int i = 0; i < arr.length; i++) {
 //             if (arr[i] == key) {
@@ -354,7 +354,7 @@
 // }
 
 
-// public class Main {
+// public class Main1 {
 // static int binarySearch(int[] arr, int key) {
 //         int low = 0, high = arr.length - 1;
 
@@ -379,7 +379,7 @@
 // }
 
 
-// public class Main {
+// public class Main1 {
 // static int binarySearch(int[] arr, int low, int high, int key) {
 //         if (low > high) return -1;
 
@@ -401,7 +401,7 @@
 // }
 
 
-// public class Main {
+// public class Main1 {
 // public static void main(String[] args) {
 //         int[] arr = {1,2,2,2,3,4};
 //         int key = 2;
@@ -420,7 +420,7 @@
 // }
 
 
-// public class Main {
+// public class Main1 {
 // public static void main(String[] args) {
 //         int[] arr = {1,2,2,2,3,4};
 //         int key = 2;
@@ -436,7 +436,7 @@
 // }
 
 
-// public class Main {
+// public class Main1 {
 //  public static void main(String[] args) {
 //         int[] arr = {1, 2, 3, 2, 4, 2};
 //         int key = 2;
@@ -454,7 +454,7 @@
 // }
 
 
-// public class Main {
+// public class Main1 {
 // public static void main(String[] args) {
 //         int[] arr = {1, 2, 3, 2, 4, 2};
 //         int key = 2;
@@ -473,7 +473,7 @@
 // }
 
 
-// public class Main {
+// public class Main1 {
 // public static void main(String[] args) {
 //         int[] arr = {5, 2, 8, 1, 4};
 
@@ -490,7 +490,7 @@
 // }
 
 
-// public class Main {
+// public class Main1 {
 //  public static void main(String[] args) {
 //         int[] arr = {5, 2, 8, 1, 4};
 
@@ -508,7 +508,7 @@
 
 
 // import java.util.Arrays;
-// public class Main {
+// public class Main1 {
 // public static void main(String[] args) {
 //         int[] arr = {5, 2, 8, 1, 4};
 
@@ -519,7 +519,7 @@
 // } 
 
 
-//  public class Main {
+//  public class Main1 {
 // static int min(int[] arr, int i) {
 //         if (i == arr.length - 1) return arr[i];
 
@@ -533,9 +533,290 @@
 //     }
 // } 
 
+// import java.util.ArrayList;
+
+// public class Main1 {
+//     public static void main(String[] args) {
+
+//         ArrayList<Integer> list = new ArrayList<>();
+
+//         list.add(10);
+//         list.add(20);
+//         list.add(30);
+
+//         System.out.println(list);
+//     }
+// }
+
+// import java.util.ArrayList;
+
+// public class Main1 {
+//     public static void main(String[] args) {
+
+//         ArrayList<String> list = new ArrayList<>();
+
+//         list.add("Java");
+//         list.add("Python");
+
+//         System.out.println(list.get(1));
+
+//         list.set(1, "C++");
+
+//         System.out.println(list);
+
+//         list.remove(0);
+
+//         System.out.println(list);
+
+//         System.out.println(list.size());
+//     }
+// }
+
+// import java.util.ArrayList;
+
+// public class Main1 {
+//     public static void main(String[] args) {
+
+//         ArrayList<Integer> list = new ArrayList<>();
+
+//         list.add(5);
+//         list.add(10);
+//         list.add(15);
+
+//         for (int x : list) {
+//             System.out.println(x);
+//         }
+//     }
+// }
+
+// import java.util.LinkedList;
+
+// public class Main1 {
+//     public static void main(String[] args) {
+
+//         LinkedList<Integer> list = new LinkedList<>();
+
+//         list.add(1);
+//         list.add(2);
+//         list.addFirst(0);
+//         list.addLast(3);
+
+//         System.out.println(list);
+//     }
+// }
 
 
+// import java.util.HashSet;
 
+// public class Main1 {
+//     public static void main(String[] args) {
 
+//         HashSet<Integer> set = new HashSet<>();
 
+//         set.add(10);
+//         set.add(20);
+//         set.add(10);
+
+//         System.out.println(set);
+//     }
+// }
+
+// import java.util.HashMap;
+
+// public class Main1 {
+//     public static void main(String[] args) {
+
+//         HashMap<Integer, String> map = new HashMap<>();
+
+//         map.put(1, "Anshul");
+//         map.put(2, "Saurabh");
+
+//         System.out.println(map);
+
+//         System.out.println(map.get(1));
+//     }
+// }
     
+// class MyThread extends Thread {
+
+//     public void run() {
+
+//         for (int i = 1; i <= 5; i++) {
+
+//             System.out.println("Thread Running : " + i);
+//         }
+//     }
+// }
+
+// public class Main1 {
+//     public static void main(String[] args) {
+
+//         MyThread t1 = new MyThread();
+
+//         t1.start();
+//     }
+// }
+
+// class MyThread implements Runnable {
+
+//     public void run() {
+
+//         for (int i = 1; i <= 5; i++) {
+
+//             System.out.println(i);
+//         }
+//     }
+// }
+
+// public class Main1 {
+//     public static void main(String[] args) {
+
+//         MyThread obj = new MyThread();
+
+//         Thread t1 = new Thread(obj);
+
+//         t1.start();
+//     }
+// }
+
+// class A extends Thread {
+
+//     public void run() {
+//         for (int i = 1; i <= 3; i++) {
+//             System.out.println("A : " + i);
+//         }
+//     }
+// }
+
+// class B extends Thread {
+
+//     public void run() {
+//         for (int i = 1; i <= 3; i++) {
+//             System.out.println("B : " + i);
+//         }
+//     }
+// }
+
+// public class Main1 {
+//     public static void main(String[] args) {
+
+//         A t1 = new A();
+//         B t2 = new B();
+
+//         t1.start();
+//         t2.start();
+//     }
+// }
+
+// class MyThread extends Thread {
+
+//     public void run() {
+
+//         try {
+
+//             for (int i = 1; i <= 5; i++) {
+
+//                 System.out.println(i);
+
+//                 Thread.sleep(1000);
+//             }
+
+//         } catch (Exception e) {
+
+//             System.out.println(e);
+//         }
+//     }
+// }
+
+// public class Main1 {
+//     public static void main(String[] args) {
+
+//         MyThread t1 = new MyThread();
+
+//         t1.start();
+//     }
+// }
+
+
+
+
+// class MyThread extends Thread {
+
+//     public void run() {
+
+//         for (int i = 1; i <= 5; i++) {
+
+//             System.out.println(i);
+//         }
+//     }
+// }
+
+// public class Main1 {
+//     public static void main(String[] args) {
+
+//         try {
+
+//             MyThread t1 = new MyThread();
+
+//             t1.start();
+
+//             t1.join();
+
+//             System.out.println("Main Thread Ends");
+
+//         } catch (Exception e) {
+
+//             System.out.println(e);
+//         }
+//     }
+// }
+
+// class Table {
+
+//     synchronized void printTable(int n) {
+
+//         for (int i = 1; i <= 5; i++) {
+
+//             System.out.println(n * i);
+//         }
+//     }
+// }
+
+// class MyThread1 extends Thread {
+
+//     Table t;
+
+//     MyThread1(Table t) {
+//         this.t = t;
+//     }
+
+//     public void run() {
+//         t.printTable(5);
+//     }
+// }
+
+// class MyThread2 extends Thread {
+
+//     Table t;
+
+//     MyThread2(Table t) {
+//         this.t = t;
+//     }
+
+//     public void run() {
+//         t.printTable(10);
+//     }
+// }
+
+// public class Main1 {
+//     public static void main(String[] args) {
+
+//         Table obj = new Table();
+
+//         MyThread1 t1 = new MyThread1(obj);
+//         MyThread2 t2 = new MyThread2(obj);
+
+//         t1.start();
+//         t2.start();
+//     }
+// }

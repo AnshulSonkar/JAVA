@@ -1,6 +1,6 @@
 // import java.util.Arrays;
 
-// public class Anagram {
+// public class Anagram1 {
 //     public static void main(String[] args) {
 //     String s1="silent";
 //     String s2="listen";
@@ -23,7 +23,7 @@
 
 // import java.util.Arrays;
 
-// public class Anagram {
+// public class Anagram1 {
 //     public static void main(String[] args) {
 //         String s1 = "Listen";
 //         String s2 = "Silent";
@@ -42,7 +42,7 @@
 // }
 
 
-// public class Anagram {
+// public class Anagram1 {
 //     public static void main(String[] args) {
 //         String s1 = "listen";
 //         String s2 = "silent";
@@ -71,7 +71,7 @@
 // }
 
 
-// public class Anagram {
+// public class Anagram1 {
 //     public static void main(String[] args) {
 //         String str = "madam";
 //         String rev = "";
@@ -90,7 +90,7 @@
 
 
 // import java.util.Arrays;
-//  public class Anagram {
+//  public class Anagram1 {
 //   public static void main(String[] args) {
 
 //         String s1 = "listen";
@@ -111,7 +111,7 @@
 // }
 
 
-// public class Anagram {
+// public class Anagram1 {
 //   public static void main(String[] args) {
 
 //         String s1 = "listen";
@@ -136,6 +136,3 @@
 //         System.out.println(isAnagram ? "Anagram" : "Not Anagram");
 //     }
 // }
-
-
-

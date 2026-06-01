@@ -1,6 +1,6 @@
 // import java.util.Scanner;
 
-// public class matrix {
+// public class Matrix1 {
 //     public static void main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
 
@@ -26,7 +26,7 @@
 // }
 
 
-// public class matrix {
+// public class Matrix1 {
 //  public static void main(String[] args) {
 
 //         int[][] arr = {
@@ -51,7 +51,7 @@
 
 
 
-// public class matrix {
+// public class Matrix1 {
 //  public static void main(String[] args) {
 
 //         int[][] arr = {
@@ -74,7 +74,7 @@
 // }
 
 
-// public class matrix {
+// public class Matrix1 {
 //  public static void main(String[] args) {
 
 //         int[][] arr = {
@@ -99,7 +99,7 @@
 // }
 
 
-// public class matrix {
+// public class Matrix1 {
 //  public static void main(String[] args) {
 
 //         int[][] arr = {
@@ -122,7 +122,7 @@
 // }
 
 
-// public class matrix {
+// public class Matrix1 {
 //  public static void main(String[] args) {
 
 //         int[][] arr = {
@@ -148,7 +148,7 @@
 // }
 
 
-// public class matrix {
+// public class Matrix1 {
 //  public static void main(String[] args) {
 
 //         int[][] arr = {
