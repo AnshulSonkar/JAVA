@@ -1,7 +1,7 @@
-// public class SubstringExample1 {
+// public class Substring1 {
     
 // }
-// public class SubstringExample1 {
+// public class Substring1 {
 //     public static void main(String[] args) {
 //         String text = "Programming";
 
@@ -257,7 +257,7 @@
 // } 
 
 
-// public class SubstringExample1 {
+// public class Substring1 {
 //     public static void main(String[] args) {
 //         String text = "Programming";
 
@@ -272,7 +272,7 @@
 // }
 
 
-// public class SubstringExample1 {
+// public class Substring1 {
 // public static void main(String[] args) {
 //         String str = "Programming";
 
@@ -283,7 +283,7 @@
 // }
 
 
-// public class SubstringExample1 {
+// public class Substring1 {
 //     public static void main(String[] args) {
 //         String str = "Programming";
 
@@ -295,7 +295,7 @@
 // }
 
 
-// public class SubstringExample1 {
+// public class Substring1 {
 //      public static void main(String[] args) {
 //         String str = "Programming";
 
@@ -307,7 +307,7 @@
 
 
 // Remove space
-// public class SubstringExample {
+// public class Substring1 {
 // public static void main(String[] args) {
 //         String str = "Hello World Java";
 //         String result = "";
@@ -325,7 +325,7 @@
 // }
 
 
-// public class SubstringExample1 {
+// public class Substring1 {
 //     public static void main(String[] args) {
 //         String str = "HelloWorld";
 
@@ -338,7 +338,7 @@
 // /}
 
 
-// public class SubstringExample1 {
+// public class Substring1 {
 //  public static void main(String[] args) {
 
 //         String str = "hello";
@@ -359,7 +359,7 @@
 // }
 
 
-// public class SubstringExample1 {
+// public class Substring1 {
 // public static void main(String[] args) {
 
 //         String str = "hello";
@@ -373,7 +373,7 @@
 // }
 
 
-// public class SubstringExample1 {
+// public class Substring1 {
 //  public static void main(String[] args) {
 
 //         String str = "programming";
@@ -394,7 +394,7 @@
 // }
 
 
-// public class SubstringExample1 {
+// public class Substring1 {
 // public static void main(String[] args) {
 
 //         String str = "banana";
@@ -414,7 +414,7 @@
 // }
 
 
-// public class SubstringExample1 {
+// public class Substring1 {
 //   static boolean search(String str, int i, char target) {
 
 //         if (i == str.length()) return false;
@@ -433,7 +433,7 @@
 // }
 
 
-// public class SubstringExample1 {
+// public class Substring1 {
 // public static void main(String[] args) {
 
 //         StringBuilder sb = new StringBuilder("Hello");
@@ -443,7 +443,7 @@
 // }
 
 
-// public class SubstringExample1 {
+// public class Substring1 {
 //  public static void main(String[] args) {
 
 //         StringBuilder sb = new StringBuilder("Hello");
@@ -455,7 +455,7 @@
 // }
 
 
-// public class SubstringExample1 {
+// public class Substring1 {
 //  public static void main(String[] args) {
 
 //         StringBuilder sb = new StringBuilder("Helo");
@@ -467,7 +467,7 @@
 // }
 
 
-// public class SubstringExample1 {
+// public class Substring1 {
 // public static void main(String[] args) {
 
 //         StringBuilder sb = new StringBuilder("Hello");
@@ -479,7 +479,7 @@
 // }
 
 
-// public class SubstringExample1 {
+// public class Substring1 {
 //  public static void main(String[] args) {
 
 //         StringBuilder sb = new StringBuilder("hello");
@@ -491,7 +491,7 @@
 // }
 
 
-// public class SubstringExample1 {
+// public class Substring1 {
 
 //  public static void main(String[] args) {
 
@@ -504,7 +504,7 @@
 // }
 
 
-// public class SubstringExample1 {
+// public class Substring1 {
 // public static void main(String[] args) {
 
 //         StringBuilder sb = new StringBuilder("Java");

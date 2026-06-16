@@ -1,4 +1,4 @@
-// public class Recursion1 {
+// public class Recursion {
 //     static void printnumber(int n) {
 //         if (n > 10) {
 //             return;
@@ -14,7 +14,7 @@
 // } 
 
 
-// public class recursion1 {
+// public class Recursion {
 //     static void printnumber(int n) {
 //         if (n> 10) {
 //             return;
@@ -33,7 +33,7 @@
 // }
 
 
-// public class Recursion1 {
+// public class Recursion {
 
 //     static void printnumber(int n) {
 //         if (n > 10) {
@@ -57,7 +57,7 @@
 // }
 
 
-// public class Recursion1 {
+// public class Recursion {
 //     static void print(int n) {
 //         if (n == 0) return;
 //         System.out.print(n + " ");
@@ -70,7 +70,7 @@
 // }
 
 
-// public class Recursion1 {
+// public class Recursion {
 // static int sum(int n) {
 //         if (n == 0) return 0;
 //         return n % 10 + sum(n / 10);
@@ -82,7 +82,7 @@
 // }
 
 
-// public class Recursion1 {
+// public class Recursion {
 
 //     static boolean isSorted(int[] arr, int i) {
 //         if (i == arr.length - 1) return true;
@@ -99,7 +99,7 @@
 
 
 
-// public class Recursion1 {
+// public class Recursion {
 
 //  public static void main(String[] args) {
 //         String str = "hello";
@@ -115,7 +115,7 @@
 // }
 
 
-// public class Recursion1 {
+// public class Recursion {
 
 //     public static void main(String[] args) {
 //         String str = "Java is easy";
@@ -129,7 +129,7 @@
 // import java.util.ArrayList;
 // import java.util.Arrays;
 
-// public class Recursion1 {
+// public class Recursion {
 //      public static void main(String[] args) {
 //         ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1,2,3,4,5));
 
@@ -148,7 +148,7 @@
 // import java.util.Arrays;
 // import java.util.Collections;
 
-// public class Recursion1 {
+// public class Recursion {
 // public static void main(String[] args) {
 //         ArrayList<Integer> list = new ArrayList<>(Arrays.asList(10,20,30,40));
 
@@ -158,7 +158,7 @@
 // } 
 
 
-// public class Recursion1 {
+// public class Recursion {
 // public static void main(String[] args) {
 //         int n = 4;
 
@@ -176,7 +176,7 @@
 
 // import java.util.Arrays;
 
-// public class Recursion1 {
+// public class Recursion {
 
 //     static int fib(int n, int[] dp) {
 //         if (n <= 1) return n;
@@ -196,7 +196,7 @@
 // }
 
 
-//  public class Recursion1 {
+//  public class Recursion {
 
 //     public static void main(String[] args) {
 //         int n = 153, temp = n, sum = 0;
@@ -213,7 +213,7 @@
 //  }
 
 
-//  public class Recursion1 {
+//  public class Recursion {
 
 //     public static void main(String[] args) {
 //         int n = 7;
@@ -232,7 +232,7 @@
 //  }
 
 
-// public class Recursion1 {
+// public class Recursion {
 // static void subset(String p, String up) {
 //         if (up.isEmpty()) {
 //             System.out.println(p);
@@ -254,7 +254,7 @@
 // }
 
 
-// public class Recursion1 {
+// public class Recursion {
 
 //      static void subsetSum(int[] arr, int i, int sum, String curr) {
 //         if (i == arr.length) {
@@ -276,7 +276,7 @@
 // }
 
 
-// public class Recursion1 {
+// public class Recursion {
 
 //     static void permute(String p, String up) {
 //         if (up.isEmpty()) {
@@ -300,7 +300,7 @@
 // }
 
 
-// public class Recursion1 {   
+// public class Recursion {   
 // static int count(String p, String up) {
 //         if (up.isEmpty()) {
 //             return 1;
@@ -317,7 +317,7 @@
 //     }
 // }
 
-// public class Recursion1 {
+// public class Recursion {
 //     public static void main(String[] args) {
 //         String str1 = "abc";
 //         int count = 0;
@@ -332,3 +332,4 @@
 //  System.out.println("Duplicate count: " + count);
 //     }
 // }
+

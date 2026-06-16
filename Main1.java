@@ -820,3 +820,77 @@
 //         t2.start();
 //     }
 // }
+
+
+// public class Main1 {
+//     public static void main(String[] args) {
+
+//         try {
+
+//             MyThread t1 = new MyThread();
+
+//             t1.start();
+
+//             t1.join();
+
+//             System.out.println("Main Thread Ends");
+
+//         } catch (Exception e) {
+
+//             System.out.println(e);
+//         }
+//     }
+// }
+
+
+// import java.util.HashMap;
+
+// public class Main1 {
+//     public static void main(String[] args) {
+
+//         HashMap<Integer, String> map = new HashMap<>();
+
+//         map.put(1, "Anshul");
+//         map.put(2, "Saurabh");
+
+//         System.out.println(map);
+
+//         System.out.println(map.get(1));
+//     }
+// }
+
+
+
+// Count parentheses in Stack
+import java.util.Stack;
+
+public class Main1 {
+    public static void main(String[] args) {
+
+        String str = "(a+b)*(c-d)";
+
+        int open = 0;
+        int close = 0;
+
+        Stack<Character> stack = new Stack<>();
+
+        for (int i = 0; i < str.length(); i++) {
+
+            char ch = str.charAt(i);
+
+            if (ch == '(') {
+                stack.push(ch);
+                open++;
+            }
+
+            if (ch == ')') {
+                close++;
+            }
+        }
+
+        System.out.println("Opening Parentheses = " + open);
+        System.out.println("Closing Parentheses = " + close);
+    }
+}
+
+
