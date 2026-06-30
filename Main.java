@@ -862,35 +862,191 @@
 
 
 // Count parentheses in Stack
-import java.util.Stack;
+// import java.util.Stack;
 
-public class Main1 {
+// public class Main1 {
+//     public static void main(String[] args) {
+
+//         String str = "(a+b)*(c-d)";
+
+//         int open = 0;
+//         int close = 0;
+
+//         Stack<Character> stack = new Stack<>();
+
+//         for (int i = 0; i < str.length(); i++) {
+
+//             char ch = str.charAt(i);
+
+//             if (ch == '(') {
+//                 stack.push(ch);
+//                 open++;
+//             }
+
+//             if (ch == ')') {
+//                 close++;
+//             }
+//         }
+
+//         System.out.println("Opening Parentheses = " + open);
+//         System.out.println("Closing Parentheses = " + close);
+//     }
+// }
+
+
+// import java.util.Stack;
+
+// public class Main1 {
+
+//     public static void main(String[] args) {
+
+//         String s = "(())";
+
+//         Stack<Integer> st = new Stack<>();
+//         st.push(0);
+
+//         for (char ch : s.toCharArray()) {
+
+//             if (ch == '(') {
+
+//                 st.push(0);
+
+//             } else {
+
+//                 int v = st.pop();
+
+//                 int count = Math.max(2 * v, 1);
+
+//                 st.push(st.pop() + count);
+//             }
+//         }
+
+//         System.out.println(st.pop());
+//     }
+// }
+
+
+// public class Main1 {
+
+//     public static String removeOuterParentheses(String s) {
+
+//         StringBuilder result = new StringBuilder();
+//         int count = 0;
+
+//         for (char ch : s.toCharArray()) {
+
+//             if (ch == '(') {
+
+//                 if (count > 0) {
+//                     result.append(ch);
+//                 }
+
+//                 count++;
+//             }
+//             else {
+
+//                 count--;
+
+//                 if (count > 0) {
+//                     result.append(ch);
+//                 }
+//             }
+//         }
+
+//         return result.toString();
+//     }
+
+//     public static void main(String[] args) {
+
+//         String s = "(()())(())";
+
+//         System.out.println(removeOuterParentheses(s));
+//     }
+// }
+
+
+// import java.util.Stack;
+
+// public class Main1 {
+
+//     public static void main(String[] args) {
+
+//         String num = "1432219";
+//         int k = 3;
+
+//         Stack<Character> st = new Stack<>();
+
+//         for (char digit : num.toCharArray()) {
+
+//             while (!st.isEmpty() && k > 0 && st.peek() > digit) {
+//                 st.pop();
+//                 k--;
+//             }
+
+//             st.push(digit);
+//         }
+
+//         // Remove remaining digits if k > 0
+//         while (k > 0) {
+//             st.pop();
+//             k--;
+//         }
+
+//         // Build answer
+//         StringBuilder sb = new StringBuilder();
+
+//         while (!st.isEmpty()) {
+//             sb.append(st.pop());
+//         }
+
+//         sb.reverse();
+
+//         // Remove leading zeros
+//         while (sb.length() > 0 && sb.charAt(0) == '0') {
+//             sb.deleteCharAt(0);
+//         }
+
+//         String result = sb.toString();
+
+//         if (result.isEmpty()) {
+//             result = "0";
+//         }
+
+//         System.out.println(result);
+//     }
+// } 
+// Power of three 
+public class Main {
+
+    static boolean isPowerOfThree(int n) {
+
+        if (n == 1)
+            return true;
+
+        if (n <= 0 || n % 3 != 0)
+            return false;
+
+        return isPowerOfThree(n / 3);
+    }
+
     public static void main(String[] args) {
 
-        String str = "(a+b)*(c-d)";
+        int n = 27;
 
-        int open = 0;
-        int close = 0;
-
-        Stack<Character> stack = new Stack<>();
-
-        for (int i = 0; i < str.length(); i++) {
-
-            char ch = str.charAt(i);
-
-            if (ch == '(') {
-                stack.push(ch);
-                open++;
-            }
-
-            if (ch == ')') {
-                close++;
-            }
-        }
-
-        System.out.println("Opening Parentheses = " + open);
-        System.out.println("Closing Parentheses = " + close);
+        System.out.println(isPowerOfThree(n));
     }
 }
+
+
+
+
+
+
+
+
+
+    
+
+
 
 
