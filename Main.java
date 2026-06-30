@@ -1015,6 +1015,7 @@
 //         System.out.println(result);
 //     }
 // } 
+// 
 // Power of three 
 // public class Main {
 
@@ -1034,6 +1035,26 @@
 //         int n = 27;
 
 //         System.out.println(isPowerOfThree(n));
+//     }
+// }
+
+
+// Climb Stairs
+// public class Main {
+
+//     static int climbStairs(int n) {
+
+//         if (n <= 2)
+//             return n;
+
+//         return climbStairs(n - 1) + climbStairs(n - 2);
+//     }
+
+//     public static void main(String[] args) {
+
+//         int n = 5;
+
+//         System.out.println(climbStairs(n));
 //     }
 // }
 
