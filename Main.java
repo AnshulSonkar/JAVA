@@ -1016,26 +1016,26 @@
 //     }
 // } 
 // Power of three 
-public class Main {
+// public class Main {
 
-    static boolean isPowerOfThree(int n) {
+//     static boolean isPowerOfThree(int n) {
 
-        if (n == 1)
-            return true;
+//         if (n == 1)
+//             return true;
 
-        if (n <= 0 || n % 3 != 0)
-            return false;
+//         if (n <= 0 || n % 3 != 0)
+//             return false;
 
-        return isPowerOfThree(n / 3);
-    }
+//         return isPowerOfThree(n / 3);
+//     }
 
-    public static void main(String[] args) {
+//     public static void main(String[] args) {
 
-        int n = 27;
+//         int n = 27;
 
-        System.out.println(isPowerOfThree(n));
-    }
-}
+//         System.out.println(isPowerOfThree(n));
+//     }
+// }
 
 
 
