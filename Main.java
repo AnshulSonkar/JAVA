@@ -1431,5 +1431,156 @@
 // }
 
 
+// Memoization
+// import java.util.Arrays;
+
+// public class Main {
+
+//     static int solve(int[][] grid, int i, int j, int[][] dp) {
+
+//         if (i < 0 || j < 0)
+//             return 0;
+
+//         if (grid[i][j] == 1)
+//             return 0;
+
+//         if (i == 0 && j == 0)
+//             return 1;
+
+//         if (dp[i][j] != -1)
+//             return dp[i][j];
+
+//         int up = solve(grid, i - 1, j, dp);
+//         int left = solve(grid, i, j - 1, dp);
+
+//         return dp[i][j] = up + left;
+//     }
+
+//     static int uniquePathsWithObstacles(int[][] grid) {
+
+//         int m = grid.length;
+//         int n = grid[0].length;
+
+//         int[][] dp = new int[m][n];
+
+//         for (int[] row : dp)
+//             Arrays.fill(row, -1);
+
+//         return solve(grid, m - 1, n - 1, dp);
+//     }
+
+//     public static void main(String[] args) {
+
+//         int[][] grid = {
+//                 {0,0,0},
+//                 {0,1,0},
+//                 {0,0,0}
+//         };
+
+//         System.out.println(uniquePathsWithObstacles(grid));
+//     }
+// }
+
+
+// Tabulation
+// import java.util.Arrays;
+
+// public class Main {
+
+//     static int solve(int[][] grid, int i, int j, int[][] dp) {
+
+//         if (i < 0 || j < 0)
+//             return 0;
+
+//         if (grid[i][j] == 1)
+//             return 0;
+
+//         if (i == 0 && j == 0)
+//             return 1;
+
+//         if (dp[i][j] != -1)
+//             return dp[i][j];
+
+//         int up = solve(grid, i - 1, j, dp);
+//         int left = solve(grid, i, j - 1, dp);
+
+//         return dp[i][j] = up + left;
+//     }
+
+//     static int uniquePathsWithObstacles(int[][] grid) {
+
+//         int m = grid.length;
+//         int n = grid[0].length;
+
+//         int[][] dp = new int[m][n];
+
+//         for (int[] row : dp)
+//             Arrays.fill(row, -1);
+
+//         return solve(grid, m - 1, n - 1, dp);
+//     }
+
+//     public static void main(String[] args) {
+
+//         int[][] grid = {
+//                 {0,0,0},
+//                 {0,1,0},
+//                 {0,0,0}
+//         };
+
+//         System.out.println(uniquePathsWithObstacles(grid));
+//     }
+// }
+
+
+// Space Optimized
+// public class Main {
+
+//     static int uniquePathsWithObstacles(int[][] grid) {
+
+//         int m = grid.length;
+//         int n = grid[0].length;
+
+//         int[] prev = new int[n];
+
+//         for (int i = 0; i < m; i++) {
+
+//             int[] curr = new int[n];
+
+//             for (int j = 0; j < n; j++) {
+
+//                 if (grid[i][j] == 1) {
+//                     curr[j] = 0;
+//                     continue;
+//                 }
+
+//                 if (i == 0 && j == 0) {
+//                     curr[j] = 1;
+//                     continue;
+//                 }
+
+//                 int up = (i > 0) ? prev[j] : 0;
+//                 int left = (j > 0) ? curr[j - 1] : 0;
+
+//                 curr[j] = up + left;
+//             }
+
+//             prev = curr;
+//         }
+
+//         return prev[n - 1];
+//     }
+
+//     public static void main(String[] args) {
+
+//         int[][] grid = {
+//                 {0,0,0},
+//                 {0,1,0},
+//                 {0,0,0}
+//         };
+
+//         System.out.println(uniquePathsWithObstacles(grid));
+//     }
+// }
 
 
