@@ -1059,14 +1059,376 @@
 // }
 
 
+// Recursion Basic type-1
+// Climb Stairs
+// public class Main {
+
+//     static int climbStairs(int n) {
+
+//         if (n <= 2)
+//             return n;
+
+//         return climbStairs(n - 1) + climbStairs(n - 2);
+//     }
+
+//     public static void main(String[] args) {
+
+//         int n = 5;
+
+//         System.out.println(climbStairs(n));
+//     }
+// }
 
 
+// Memoization Method (Top-down DP) type-2
+// import java.util.Arrays;
+
+// public class Main {
+
+//     static int climb(int n, int[] dp) {
+
+//         if (n <= 2)
+//             return n;
+
+//         if (dp[n] != -1)
+//             return dp[n];
+
+//         dp[n] = climb(n - 1, dp) + climb(n - 2, dp);
+
+//         return dp[n];
+//     }
+
+//     public static void main(String[] args) {
+
+//         int n = 5;
+
+//         int[] dp = new int[n + 1];
+//         Arrays.fill(dp, -1);
+
+//         System.out.println(climb(n, dp));
+//     }
+// }
 
 
+// Tabulation Method (Bottom-Up DP) type-3
+// public class Main {
+
+//     static int climbStairs(int n) {
+
+//         if (n <= 2)
+//             return n;
+
+//         int[] dp = new int[n + 1];
+
+//         dp[1] = 1;
+//         dp[2] = 2;
+
+//         for (int i = 3; i <= n; i++) {
+
+//             dp[i] = dp[i - 1] + dp[i - 2];
+//         }
+
+//         return dp[n];
+//     }
+
+//     public static void main(String[] args) {
+
+//         int n = 5;
+
+//         System.out.println(climbStairs(n));
+//     }
+// }
 
 
+// Space Optimized (type-4)
+// public class Main {
 
+//     static int climbStairs(int n) {
+
+//         if (n <= 2)
+//             return n;
+
+//         int first = 1;
+//         int second = 2;
+
+//         for (int i = 3; i <= n; i++) {
+
+//             int current = first + second;
+
+//             first = second;
+//             second = current;
+//         }
+
+//         return second;
+//     }
+
+//     public static void main(String[] args) {
+
+//         int n = 5;
+
+//         System.out.println(climbStairs(n));
+//     }
+// }
+
+
+// Remove K Digits
+// import java.util.Stack;
+
+// public class Main {
+
+//     public static void main(String[] args) {
+
+//         String num = "1432219";
+//         int k = 3;
+
+//         Stack<Character> st = new Stack<>();
+
+//         for (char digit : num.toCharArray()) {
+
+//             while (!st.isEmpty() && k > 0 && st.peek() > digit) {
+//                 st.pop();
+//                 k--;
+//             }
+
+//             st.push(digit);
+//         }
+
+//         // Remove remaining digits if k > 0
+//         while (k > 0) {
+//             st.pop();
+//             k--;
+//         }
+
+//         // Build answer
+//         StringBuilder sb = new StringBuilder();
+
+//         while (!st.isEmpty()) {
+//             sb.append(st.pop());
+//         }
+
+//         sb.reverse();
+
+//         // Remove leading zeros
+//         while (sb.length() > 0 && sb.charAt(0) == '0') {
+//             sb.deleteCharAt(0);
+//         }
+
+//         String result = sb.toString();
+
+//         if (result.isEmpty()) {
+//             result = "0";
+//         }
+
+//         System.out.println(result);
+//     }
+// }
+
+
+// Unique Paths
+// public class Main {
+
+//     public static int uniquePaths(int m, int n) {
+
+//         int[][] dp = new int[m][n];
+
+//         dp[0][0] = 1;
+
+//         for (int i = 0; i < m; i++) {
+
+//             for (int j = 0; j < n; j++) {
+
+//                 if (i == 0 && j == 0)
+//                     continue;
+
+//                 int up = 0;
+//                 int left = 0;
+
+//                 if (i > 0)
+//                     up = dp[i - 1][j];
+
+//                 if (j > 0)
+//                     left = dp[i][j - 1];
+
+//                 dp[i][j] = up + left;
+//             }
+//         }
+
+//         return dp[m - 1][n - 1];
+//     }
+
+//     public static void main(String[] args) {
+
+//         int m = 3;
+//         int n = 7;
+
+//         System.out.println(uniquePaths(m, n));
+//     }
+// } 
+
+
+// Memoization (Top-Down DP)
+// import java.util.Arrays;
+
+// public class Main {
+
+//     static int solve(int i, int j, int[][] dp) {
+
+//         if (i == 0 && j == 0)
+//             return 1;
+
+//         if (i < 0 || j < 0)
+//             return 0;
+
+//         if (dp[i][j] != -1)
+//             return dp[i][j];
+
+//         int up = solve(i - 1, j, dp);
+//         int left = solve(i, j - 1, dp);
+
+//         return dp[i][j] = up + left;
+//     }
+
+//     static int uniquePaths(int m, int n) {
+
+//         int[][] dp = new int[m][n];
+
+//         for (int[] row : dp)
+//             Arrays.fill(row, -1);
+
+//         return solve(m - 1, n - 1, dp);
+//     }
+
+//     public static void main(String[] args) {
+
+//         int m = 3;
+//         int n = 7;
+
+//         System.out.println(uniquePaths(m, n));
+//     }
+// }
+
+
+// Tabulation (Bottom-Up DP)
+// public class Main {
+
+//     static int uniquePaths(int m, int n) {
+
+//         int[][] dp = new int[m][n];
+
+//         dp[0][0] = 1;
+
+//         for (int i = 0; i < m; i++) {
+
+//             for (int j = 0; j < n; j++) {
+
+//                 if (i == 0 && j == 0)
+//                     continue;
+
+//                 int up = 0;
+//                 int left = 0;
+
+//                 if (i > 0)
+//                     up = dp[i - 1][j];
+
+//                 if (j > 0)
+//                     left = dp[i][j - 1];
+
+//                 dp[i][j] = up + left;
+//             }
+//         }
+
+//         return dp[m - 1][n - 1];
+//     }
+
+//     public static void main(String[] args) {
+
+//         int m = 3;
+//         int n = 7;
+
+//         System.out.println(uniquePaths(m, n));
+//     }
+// }
     
+
+// Space optimized 
+// public class Main {
+
+//     static int uniquePaths(int m, int n) {
+
+//         int[] prev = new int[n];
+
+//         for (int i = 0; i < m; i++) {
+
+//             int[] curr = new int[n];
+
+//             for (int j = 0; j < n; j++) {
+
+//                 if (i == 0 && j == 0) {
+//                     curr[j] = 1;
+//                 } else {
+
+//                     int up = 0;
+//                     int left = 0;
+
+//                     if (i > 0)
+//                         up = prev[j];
+
+//                     if (j > 0)
+//                         left = curr[j - 1];
+
+//                     curr[j] = up + left;
+//                 }
+//             }
+
+//             prev = curr;
+//         }
+
+//         return prev[n - 1];
+//     }
+
+//     public static void main(String[] args) {
+
+//         int m = 3;
+//         int n = 7;
+
+//         System.out.println(uniquePaths(m, n));
+//     }
+// }
+
+
+// Recursion
+// public class Main {
+
+//     static int solve(int[][] grid, int i, int j) {
+
+//         if (i < 0 || j < 0)
+//             return 0;
+
+//         if (grid[i][j] == 1)
+//             return 0;
+
+//         if (i == 0 && j == 0)
+//             return 1;
+
+//         int up = solve(grid, i - 1, j);
+//         int left = solve(grid, i, j - 1);
+
+//         return up + left;
+//     }
+
+//     public static void main(String[] args) {
+
+//         int[][] grid = {
+//                 {0,0,0},
+//                 {0,1,0},
+//                 {0,0,0}
+//         };
+
+//         System.out.println(
+//                 solve(grid, 2, 2)
+//         );
+//     }
+// }
 
 
 
