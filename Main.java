@@ -1616,3 +1616,46 @@
 // }
 
 
+// Memoization
+// import java.util.Arrays;
+
+// public class Main {
+
+//     static int solve(int[][] grid,int i,int j,int[][] dp){
+
+//         if(i==0 && j==0)
+//             return grid[0][0];
+
+//         if(i<0 || j<0)
+//             return Integer.MAX_VALUE;
+
+//         if(dp[i][j]!=-1)
+//             return dp[i][j];
+
+//         int up=solve(grid,i-1,j,dp);
+//         int left=solve(grid,i,j-1,dp);
+
+//         dp[i][j]=grid[i][j]+Math.min(up,left);
+
+//         return dp[i][j];
+//     }
+
+//     public static void main(String[] args){
+
+//         int[][] grid={
+//                 {1,3,1},
+//                 {1,5,1},
+//                 {4,2,1}
+//         };
+
+//         int[][] dp=new int[3][3];
+
+//         for(int[] row:dp)
+//             Arrays.fill(row,-1);
+
+//         System.out.println(
+//                 solve(grid,2,2,dp)
+//         );
+//     }
+// }
+
