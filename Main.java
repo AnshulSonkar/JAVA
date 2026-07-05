@@ -1584,3 +1584,35 @@
 // }
 
 
+// Recursion
+// public class Main {
+
+//     static int solve(int[][] grid, int i, int j){
+
+//         if(i==0 && j==0)
+//             return grid[0][0];
+
+//         if(i<0 || j<0)
+//             return Integer.MAX_VALUE;
+
+//         int up = solve(grid,i-1,j);
+//         int left = solve(grid,i,j-1);
+
+//         return grid[i][j] + Math.min(up,left);
+//     }
+
+//     public static void main(String[] args){
+
+//         int[][] grid={
+//                 {1,3,1},
+//                 {1,5,1},
+//                 {4,2,1}
+//         };
+
+//         System.out.println(
+//                 solve(grid,2,2)
+//         );
+//     }
+// }
+
+
