@@ -4817,6 +4817,120 @@
 // }
 // 
 // 
+// Burst Balloons -Tabulation
+// public class Main {
+
+//     static int maxCoins(int[] nums) {
+
+//         int n = nums.length;
+
+//         int[] arr = new int[n + 2];
+
+//         arr[0] = 1;
+//         arr[n + 1] = 1;
+
+//         for (int i = 0; i < n; i++)
+//             arr[i + 1] = nums[i];
+
+//         int[][] dp = new int[n + 2][n + 2];
+
+//         for (int len = 1; len <= n; len++) {
+
+//             for (int i = 1; i <= n - len + 1; i++) {
+
+//                 int j = i + len - 1;
+
+//                 for (int k = i; k <= j; k++) {
+
+//                     int coins =
+//                             dp[i][k - 1]
+//                             + dp[k + 1][j]
+//                             + arr[i - 1] * arr[k] * arr[j + 1];
+
+//                     dp[i][j] =
+//                             Math.max(dp[i][j], coins);
+//                 }
+//             }
+//         }
+
+//         return dp[1][n];
+//     }
+
+//     public static void main(String[] args) {
+
+//         int[] nums = {3,1,5,8};
+
+//         System.out.println(maxCoins(nums));
+//     }
+// }
+// 
+// 
+// Boolean Parenthesisation - Recursive Solution
+// public class Main {
+
+//     static int solve(String exp, int i, int j, boolean isTrue) {
+
+//         if (i > j)
+//             return 0;
+
+//         if (i == j) {
+
+//             if (isTrue)
+//                 return exp.charAt(i) == 'T' ? 1 : 0;
+
+//             else
+//                 return exp.charAt(i) == 'F' ? 1 : 0;
+//         }
+
+//         int ways = 0;
+
+//         for (int k = i + 1; k < j; k += 2) {
+
+//             int LT = solve(exp, i, k - 1, true);
+//             int LF = solve(exp, i, k - 1, false);
+
+//             int RT = solve(exp, k + 1, j, true);
+//             int RF = solve(exp, k + 1, j, false);
+
+//             char op = exp.charAt(k);
+
+//             if (op == '&') {
+
+//                 if (isTrue)
+//                     ways += LT * RT;
+//                 else
+//                     ways += LT * RF + LF * RT + LF * RF;
+//             }
+
+//             else if (op == '|') {
+
+//                 if (isTrue)
+//                     ways += LT * RT + LT * RF + LF * RT;
+//                 else
+//                     ways += LF * RF;
+//             }
+
+//             else {
+
+//                 if (isTrue)
+//                     ways += LT * RF + LF * RT;
+//                 else
+//                     ways += LT * RT + LF * RF;
+//             }
+//         }
+
+//         return ways;
+//     }
+
+//     public static void main(String[] args) {
+
+//         String exp = "T|F&T";
+
+//         System.out.println(
+//                 solve(exp, 0, exp.length() - 1, true)
+//         );
+//     }
+// }
 
 
 
